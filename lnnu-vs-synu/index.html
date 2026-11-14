@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>辽师 vs 沈师 · 美术与书法专硕（135600）择校分析</title>
+<style>
+  :root{
+    --ink:#161b22; --ink-2:#2c3540; --sub:#5d6874; --mute:#8b949e;
+    --line:#e4e8ed; --line-2:#eef1f5; --bg:#f4f6f8; --card:#ffffff;
+    --blue:#1a5fa8; --blue-d:#123f70; --blue-soft:#eef4fb; --blue-line:#cfe0f2;
+    --orange:#a85a17; --orange-soft:#fdf4ea; --orange-line:#f0dcc4;
+    --green:#17734a; --green-soft:#eef8f2; --green-line:#c6e5d5;
+    --red:#a92720; --red-soft:#fdf2f1; --red-line:#f2cbc7;
+    --gold:#8a5a12;
+    --radius:14px;
+    --shadow:0 1px 2px rgba(16,32,50,.04),0 8px 24px rgba(16,32,50,.05);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,-apple-system,sans-serif;
+    font-size:16px; line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* ============ progress ============ */
+  #progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#1a5fa8,#3f8ed0);z-index:100;transition:width .1s linear}
+
+  /* ============ hero ============ */
+  .hero{
+    background:
+      radial-gradient(900px 380px at 82% -10%, rgba(72,148,214,.34), transparent 62%),
+      linear-gradient(124deg,#0f2b46 0%,#164a7c 56%,#1d6199 100%);
+    color:#fff; padding:52px 32px 46px;
+  }
+  .hero-in{max-width:1180px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#a9cbe8;font-weight:600}
+  h1{margin:14px 0 12px;font-size:33px;line-height:1.32;font-weight:700;letter-spacing:-.01em}
+  h1 small{display:block;font-size:16px;font-weight:400;color:#c2dcf1;margin-top:10px;letter-spacing:0;line-height:1.7}
+  .hero .who{font-size:13.5px;color:#b4d2ea;margin:0}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .chips span{
+    background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);
+    padding:5px 11px;border-radius:999px;font-size:12.5px;color:#e7f2fb;
+  }
+  .hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16);border-radius:12px;overflow:hidden;margin-top:26px}
+  .hero-stats div{background:rgba(9,32,54,.34);padding:14px 16px}
+  .hero-stats b{display:block;font-size:21px;font-weight:700;letter-spacing:-.01em}
+  .hero-stats em{display:block;font-style:normal;font-size:12px;color:#a8c8e2;margin-top:3px}
+
+  /* ============ layout ============ */
+  .layout{max-width:1180px;margin:0 auto;padding:34px 32px 90px;display:grid;grid-template-columns:246px minmax(0,1fr);gap:34px;align-items:start}
+
+  /* ============ toc ============ */
+  .toc-wrap{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow-y:auto;scrollbar-width:thin}
+  .toc-h{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);font-weight:700;margin:6px 0 12px 12px}
+  .toc{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+  .toc li{margin:0}
+  .toc a{
+    display:block;padding:7px 12px;font-size:13.6px;color:var(--sub);line-height:1.5;
+    border-left:2px solid transparent;margin-left:-2px;transition:.16s;
+  }
+  .toc a:hover{color:var(--blue);background:var(--blue-soft);text-decoration:none}
+  .toc a.on{color:var(--blue);font-weight:600;border-left-color:var(--blue);background:#f7fafd}
+  .toc .n{font-variant-numeric:tabular-nums;color:var(--mute);font-size:11.5px;margin-right:6px}
+  .toc a.on .n{color:var(--blue)}
+  .toc-foot{margin:16px 0 0 12px;font-size:12px;color:var(--mute);line-height:1.7}
+
+  /* ============ content ============ */
+  main{min-width:0}
+  section{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:30px 34px 34px;margin-bottom:22px;box-shadow:var(--shadow);
+    scroll-margin-top:22px;
+  }
+  h2{
+    font-size:21px;line-height:1.45;margin:0 0 18px;padding-bottom:14px;
+    border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:11px;font-weight:700;letter-spacing:-.01em;
+  }
+  h2 .num{
+    flex:none;font-size:12px;color:#fff;background:var(--blue);border-radius:6px;
+    padding:3px 8px;font-weight:700;letter-spacing:.04em;font-variant-numeric:tabular-nums;
+  }
+  h2 .num.alt{background:var(--orange)}
+  h3{font-size:17px;margin:30px 0 10px;color:var(--blue-d);font-weight:700;line-height:1.5;scroll-margin-top:24px}
+  h3:first-of-type{margin-top:8px}
+  h3 .badge{font-size:11.5px;padding:2px 7px;border-radius:5px;margin-left:8px;vertical-align:2px;font-weight:600}
+  h4{margin:0 0 8px;font-size:15px}
+  p{margin:10px 0}
+  ul,ol{margin:10px 0 10px 24px;padding:0}
+  li{margin:6px 0}
+  strong,b{font-weight:700;color:#0e1419}
+  .note{font-size:13px;color:var(--sub)}
+  .src{font-size:12.4px;color:var(--mute);margin-top:8px;line-height:1.75}
+
+  .lede{
+    background:linear-gradient(180deg,#fffdf7,#fdf7ea);border:1px solid #f0e2c4;
+    border-left:4px solid #d5a03c;border-radius:10px;padding:17px 20px;margin:14px 0 20px;
+  }
+  .lede p{margin:7px 0}
+  .lede p:first-child{margin-top:0}
+  .lede p:last-child{margin-bottom:0}
+  .lede b{color:var(--gold)}
+
+  .callout{border:1px solid var(--line);border-radius:10px;padding:15px 18px;margin:16px 0;background:#fbfcfd;font-size:14.6px}
+  .callout p:first-child{margin-top:0}
+  .callout p:last-child{margin-bottom:0}
+  .callout .tag-h{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:5px;margin-right:8px;vertical-align:1px}
+  .callout.ok{background:var(--green-soft);border-color:var(--green-line)}
+  .callout.ok .tag-h{background:var(--green);color:#fff}
+  .callout.warn{background:var(--orange-soft);border-color:var(--orange-line)}
+  .callout.warn .tag-h{background:var(--orange);color:#fff}
+  .callout.bad{background:var(--red-soft);border-color:var(--red-line)}
+  .callout.bad .tag-h{background:var(--red);color:#fff}
+  .callout.info{background:var(--blue-soft);border-color:var(--blue-line)}
+  .callout.info .tag-h{background:var(--blue);color:#fff}
+
+  /* ============ tables ============ */
+  .table-wrap{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.7;min-width:540px}
+  th,td{border:1px solid var(--line);padding:10px 13px;vertical-align:top;text-align:left}
+  th{background:#eff3f7;font-weight:700;color:#1d2a36;font-size:13.4px;letter-spacing:.01em}
+  tbody tr:nth-child(even){background:#fafbfc}
+  tbody tr:hover{background:#f5f9fd}
+  td.blue{background:#f7fbfe}
+  td.orange{background:#fffcf7}
+  .center{text-align:center}
+  .num-cell{text-align:center;font-variant-numeric:tabular-nums;font-weight:600}
+  tr.sum td{background:#eef3f8;font-weight:700}
+
+  /* ============ cards ============ */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+  .card{border:1px solid var(--line);border-radius:12px;padding:17px 19px;background:#fcfdfe}
+  .card.blue{border-color:var(--blue-line);background:#f8fbfe}
+  .card.orange{border-color:var(--orange-line);background:#fffcf7}
+  .card.green{border-color:var(--green-line);background:#fafcfb}
+  .card h4{font-size:15px;margin-bottom:7px}
+  .card.blue h4{color:var(--blue)}
+  .card.orange h4{color:var(--orange)}
+  .card.green h4{color:var(--green)}
+  .card p{font-size:14px;margin:7px 0}
+  .card p:last-child{margin-bottom:0}
+  .card ul{margin:7px 0 0 20px;font-size:14px}
+
+  .tag{display:inline-block;font-size:11.5px;padding:1px 7px;border-radius:5px;border:1px solid;white-space:nowrap;line-height:1.7}
+  .t-ok{color:var(--green);border-color:var(--green-line);background:var(--green-soft)}
+  .t-warn{color:var(--orange);border-color:var(--orange-line);background:var(--orange-soft)}
+  .t-bad{color:var(--red);border-color:var(--red-line);background:var(--red-soft)}
+  .t-gray{color:var(--sub);border-color:var(--line);background:#f6f7f9}
+  .t-blue{color:var(--blue);border-color:var(--blue-line);background:var(--blue-soft)}
+
+  /* ============ chart ============ */
+  .chart-box{border:1px solid var(--line);border-radius:12px;padding:18px 16px 10px;background:#fcfdfe;margin:16px 0}
+  .legend{display:flex;gap:20px;font-size:12.8px;color:var(--sub);margin:0 0 12px 4px;flex-wrap:wrap}
+  .legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .ax{font-size:11.5px;fill:var(--mute);font-family:inherit}
+
+  .quote{border-left:3px solid var(--line);padding:4px 0 4px 16px;color:var(--sub);font-size:14px;margin:14px 0}
+
+  /* ============ number list ============ */
+  ol.steps{list-style:none;margin:14px 0 0;padding:0;counter-reset:s}
+  ol.steps>li{
+    counter-increment:s;position:relative;padding:2px 0 2px 44px;margin:0 0 16px;
+  }
+  ol.steps>li::before{
+    content:counter(s);position:absolute;left:0;top:2px;
+    width:26px;height:26px;border-radius:8px;background:var(--blue-soft);color:var(--blue);
+    font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;
+    border:1px solid var(--blue-line);
+  }
+  ol.steps>li b{display:block;margin-bottom:2px}
+
+  /* ============ footer ============ */
+  footer{max-width:1180px;margin:0 auto;padding:0 32px 60px;color:var(--mute);font-size:12.6px;line-height:1.9;text-align:center}
+
+  /* ============ floating btn ============ */
+  #toTop{
+    position:fixed;right:26px;bottom:26px;width:44px;height:44px;border-radius:12px;
+    background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(16,32,50,.12);
+    display:flex;align-items:center;justify-content:center;cursor:pointer;
+    opacity:0;visibility:hidden;transition:.2s;z-index:60;color:var(--sub);font-size:16px;
+  }
+  #toTop.on{opacity:1;visibility:visible}
+  #toTop:hover{color:var(--blue);border-color:var(--blue-line)}
+
+  #tocBtn{
+    position:fixed;left:18px;bottom:22px;z-index:70;display:none;
+    align-items:center;gap:7px;background:#123f70;color:#fff;border:none;
+    padding:11px 16px;border-radius:999px;font-size:13.5px;font-weight:600;
+    box-shadow:0 8px 24px rgba(18,63,112,.34);cursor:pointer;font-family:inherit;
+  }
+  #tocMask{position:fixed;inset:0;background:rgba(10,22,36,.42);z-index:80;opacity:0;visibility:hidden;transition:.2s}
+  #tocMask.on{opacity:1;visibility:visible}
+
+  /* ============ responsive ============ */
+  @media (max-width:1040px){
+    .layout{grid-template-columns:1fr;gap:0;padding:22px 18px 100px}
+    .toc-wrap{
+      position:fixed;inset:0 auto 0 0;width:280px;max-height:100vh;background:#fff;z-index:90;
+      padding:24px 12px;transform:translateX(-100%);transition:.26s;box-shadow:6px 0 30px rgba(10,22,36,.16);
+      overflow-y:auto;
+    }
+    .toc-wrap.open{transform:none}
+    #tocBtn{display:flex}
+    .hero{padding:36px 20px 32px}
+    h1{font-size:25px}
+    h1 small{font-size:14.5px}
+    .hero-stats{grid-template-columns:1fr 1fr}
+    section{padding:22px 18px 26px;border-radius:12px}
+    h2{font-size:18.5px;gap:9px}
+    h3{font-size:16px}
+    .grid2,.grid3{grid-template-columns:1fr}
+    body{font-size:15.5px}
+    table{font-size:13.2px}
+    th,td{padding:8px 10px}
+    footer{padding:0 18px 50px}
+    #toTop{right:16px;bottom:78px}
+  }
+
+  /* ============ print ============ */
+  @media print{
+    body{background:#fff;font-size:10.6pt;line-height:1.6}
+    #progress,#toTop,#tocBtn,.toc-wrap,#tocMask{display:none!important}
+    .layout{display:block;padding:0;max-width:none}
+    .hero{background:#123f70!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;padding:22pt 18pt}
+    section{border:1px solid #ccc;box-shadow:none;break-inside:auto;page-break-inside:auto;padding:0;margin-bottom:14pt;border-radius:0}
+    section>h2{padding:8pt 10pt}
+    section>*:not(h2){margin-left:10pt;margin-right:10pt}
+    h2,h3,h4{break-after:avoid;page-break-after:avoid}
+    .chart-box,.card,.callout{break-inside:avoid;page-break-inside:avoid}
+    .table-wrap{overflow:visible}
+    table{font-size:8.6pt;min-width:0}
+    th,td{padding:4pt 6pt}
+    tr{break-inside:avoid}
+    a{color:#123f70;text-decoration:none}
+  }
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="kicker">择校分析报告 · 美术与书法专硕 135600</div>
+    <h1>辽宁师范大学 vs 沈阳师范大学
+      <small>纯艺方向专硕：初试科目、真实分数、复试流程、教师就业路径全对比</small>
+    </h1>
+    <p class="who">面向：绥化学院 美术学（纯艺方向）本科生 · 目标 A 区省属师范院校艺术硕士 · 就业意向：中小学美术教师</p>
+    <div class="chips">
+      <span>数据截至 2026-11-14</span>
+      <span>含 2022–2026 分数线</span>
+      <span>2027 目录已核对</span>
+      <span>官方文件原文 + 逐条统计</span>
+      <span>新增：教师编路径分析</span>
+    </div>
+    <div class="hero-stats">
+      <div><b>31 分</b><em>两校 2026 最低录取分差</em></div>
+      <div><b>388 / 357</b><em>辽师 / 沈师 最低录取分</em></div>
+      <div><b>19% vs 10%</b><em>进"中初教育单位"比例</em></div>
+      <div><b>2 → 3 条</b><em>读研后可走的教师招聘通道</em></div>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="toc-wrap" id="tocWrap">
+    <div class="toc-h">目录</div>
+    <ol class="toc" id="toc"></ol>
+    <div class="toc-foot">点击任意条目跳转<br>滚动时左侧自动高亮当前章节</div>
+  </aside>
+
+  <main>
+
+  <!-- ================= 结论 ================= -->
+  <section id="s-summary" data-toc="先看结论（核心差异）" data-num="">
+    <h2><span class="num">结论</span>这不是"两所差不多的学校"，而是两种完全不同的考试</h2>
+
+    <div class="lede">
+      <p><b>最关键的一条：</b>两校虽然都是 135600 美术与书法专硕，但初试科目<b>完全不一样</b>。</p>
+      <p>辽师考 <b>两张史论卷</b>（外国美术史＋中国美术史，纯背书＋画名作图解）；沈师考 <b>一张创作＋一张理论</b>（创作草图＋1000 字评析／中外美术史＋艺术概论）。</p>
+      <p>这意味着：<b>选学校 = 选考试方式</b>，先判断你朋友哪种能力更强，比看排名有用得多。</p>
+    </div>
+
+    <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th style="width:20%">维度</th><th style="width:40%">辽宁师范大学（大连）</th><th style="width:40%">沈阳师范大学（沈阳）</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>初试专业课</td><td class="blue">711 外国美术史 + 809 中国美术史<br><span class="note">纯理论，全主观论述题</span></td><td class="orange">646 创作与评析 + 830 艺术理论<br><span class="note">一半动手（画草图）＋一半理论</span></td></tr>
+        <tr><td>对纯艺学生的友好度</td><td class="blue">中等：史论记忆量巨大，但有"名作手绘图解"这一手绘得分点</td><td class="orange">较高：创作草图占 50 分，是画室生的天然优势</td></tr>
+        <tr><td>2026 最低录取分</td><td class="blue"><b>388 分</b>（20 人，均分 397）</td><td class="orange"><b>357 分</b>（进复试 29 人，均分 379）</td></tr>
+        <tr><td>2026 招生规模</td><td class="blue">美术 20 + 书法 3</td><td class="orange">下达计划 29 人（目录原写 14）</td></tr>
+        <tr><td>2026 竞争形态</td><td class="blue"><span class="tag t-bad">差额淘汰</span>上线人数远超计划，录取线比国家线高 34 分</td><td class="orange"><span class="tag t-warn">近乎等额</span>一志愿上线 29 人＝计划 29 人</td></tr>
+        <tr><td>上岸难度（体感）</td><td class="blue">偏难。需要 <b>390+</b> 的实力才稳</td><td class="orange">偏稳。目标 <b>365–375</b> 有较大把握</td></tr>
+        <tr><td>当老师的优势</td><td class="blue"><b>略强</b>：进"中初教育单位"19%（沈师 10%）；大连各区校招把辽师当首站</td><td class="orange">沈阳主场：54% 留沈，沈阳中小学教师来源主力</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p><b>一句话建议：</b>如果文化课／背书能力一般、但手头功夫扎实 → 优先<b>沈阳师范大学</b>；如果愿意用一年时间死磕两本美术史、且能接受 390 分的门槛，换大连的城市与平台 → 选<b>辽宁师范大学</b>。</p>
+    <p><b>如果她确定要当老师：</b>两校的差距会缩小，因为教师招聘看的是"专业代码 + 教资 + 走哪条招聘通道"，两校 135600 在大连的岗位目录里都认。真正决定的是<b>她想在哪个城市考编</b>——想留大连选辽师，想留沈阳选沈师。详见 <a href="#s-teacher">第 08 节</a>。</p>
+    <p class="src">※ 上述"最低录取分"来自辽师 2026 年官方拟录取名单逐条统计、沈师 2026 年官方一志愿复试名单，均为可核验的一手数据；2025 年及以前数据来源为公开整理，已在下文标注。</p>
+  </section>
+
+  <!-- ================= 01 ================= -->
+  <section id="s-basics" data-toc="两校基本盘">
+    <h2><span class="num">01</span>两校基本盘</h2>
+
+    <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th style="width:18%">项目</th><th style="width:41%">辽宁师范大学</th><th style="width:41%">沈阳师范大学</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>院校代码 / 层次</td><td>10165 · 辽宁省属重点、省"双一流"建设高校</td><td>10166 · 辽宁省属重点</td></tr>
+        <tr><td>城市</td><td>大连（黄河路校区，主校区，市区内）</td><td>沈阳（沈北新区，大学城）</td></tr>
+        <tr><td>招生学院</td><td>美术学院（主管院长 常伟廷；教学秘书 石洁 0411-82156957）</td><td>美术与设计学院（024-86577027）</td></tr>
+        <tr><td>135600 下设方向</td><td><b>01 美术 / 02 书法</b><br><span class="note">美术不细分画种，复试、录取均按研究方向排名</span></td><td><b>01 中国画 02 油画 03 版画 04 水彩画 05 雕塑</b>，2027 新增 <b>06 书法</b><br><span class="note">按方向报考，入学后分方向培养</span></td></tr>
+        <tr><td>学制</td><td>3 年（全日制）</td><td>3 年（全日制）</td></tr>
+        <tr><td>学费</td><td>章程未列明，需查计财处公示；艺术类专硕历史区间约 1.2–1.8 万/年</td><td><b>15000 元/年</b>，3 年共 4.5 万（2027 目录明确）</td></tr>
+        <tr><td>住宿</td><td>全日制提供，约 1200 元/年</td><td>全日制提供</td></tr>
+        <tr><td>奖助</td><td>国家助学金 6000 元/年 + 学业奖学金</td><td>国家助学金 6000 元/年 + 学业奖学金（三等覆盖 50%）</td></tr>
+        <tr><td>2027 拟招生</td><td><b>美术 20 + 书法 3</b>（已公布）</td><td>目录已公布，人数以研招网为准（2026 实际下达 29）</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>学科与平台</h3>
+    <div class="grid2">
+      <div class="card blue">
+        <h4>辽师美术学院</h4>
+        <ul>
+          <li>130100 艺术学（8 人）、140300 设计学（10 人）、135600（23 人）、135700 设计（20 人）、045113 学科教学·美术（3 人）<span class="note">（2026 年计划数）</span></li>
+          <li>师范底色重，辽宁基础教育系统的"嫡系"院校之一，大连本地教师招聘认可度高</li>
+          <li>复试在同校区<b>美术馆</b>现场进行，场地与设备条件好</li>
+          <li>无美术类博士点，读博需外考</li>
+        </ul>
+      </div>
+      <div class="card orange">
+        <h4>沈师美术与设计学院</h4>
+        <ul>
+          <li>130100 艺术学（17 人）、140300 设计学（6 人）、135600（29 人）、135700 设计（20 人）<span class="note">（2026 年计划数）</span></li>
+          <li>学院体量大，130100 艺术学招生规模显著大于辽师（17 vs 8）</li>
+          <li>方向划分细（国／油／版／水彩／雕塑），导师与画种对应明确，适合有明确画种的学生</li>
+          <li>沈阳区位：毗邻鲁迅美术学院，展览、讲座、画室资源更密集</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 02 ================= -->
+  <section id="s-exam" data-toc="初试考什么">
+    <h2><span class="num">02</span>初试考什么（核心差异）</h2>
+
+    <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th style="width:14%">科目</th><th style="width:43%">辽宁师范大学 135600-01 美术</th><th style="width:43%">沈阳师范大学 135600</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>科目一</td><td colspan="2" class="center">101 思想政治理论（100 分，全国统考）</td></tr>
+        <tr><td>科目二</td><td colspan="2" class="center">204 英语（二）（100 分，全国统考）</td></tr>
+        <tr>
+          <td>科目三</td>
+          <td class="blue"><b>711 外国美术史（150 分）</b><br>题型：① 综合论述 ② <b>世界名作手绘图解分析</b>（要求用黑色签字笔手绘图解）</td>
+          <td class="orange"><b>646 创作与评析（150 分）</b><br>题型：① 创作草图 1 幅（50 分）② 创作评析，<b>不少于 1000 字</b>（100 分）<br>时长 3 小时；表现工具：铅笔、炭笔（可用钢笔、水性笔）</td>
+        </tr>
+        <tr>
+          <td>科目四</td>
+          <td class="blue"><b>809 中国美术史（150 分）</b><br>题型：综合论述（全主观大题）</td>
+          <td class="orange"><b>830 艺术理论（150 分）</b><br>题型：选择题、词语释义（名词解释）、作品赏析、论述</td>
+        </tr>
+        <tr>
+          <td>参考书</td>
+          <td class="blue">
+            711：① 中央美院《外国美术简史》中国青年出版社 2014<br>② 张敢《外国美术简史》上海人民美术出版社 2020<br>
+            809：① 尹吉男《中国美术史》高等教育出版社 2019<br>② 中央美院《中国美术简史》中国青年出版社 2010
+          </td>
+          <td class="orange">
+            830：① 中央美院《外国美术简史》中国青年 2014<br>② 马工程《中国美术史》高等教育出版社 2019<br>③ 马工程《艺术学概论》高等教育出版社 2019<br>
+            <span class="note">（设计方向另加 王受之《世界现代设计史》；美术方向以史论＋概论为主）</span><br>
+            646：<b>无指定教材</b>（全凭画面与写作）
+          </td>
+        </tr>
+        <tr>
+          <td>同等学力加试</td>
+          <td class="blue">美术学基础知识、美术史基础知识</td>
+          <td class="orange">作品临摹、美学原理</td>
+        </tr>
+        <tr>
+          <td>一句话概括</td>
+          <td class="blue">"两本美术史背到能默写，还要能徒手画出名作"</td>
+          <td class="orange">"会画命题草图 + 会写 1000 字创作说明 + 会背四本书"</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>这个差异意味着什么 <span class="badge t-blue">重点</span></h3>
+    <div class="grid2">
+      <div class="card blue">
+        <h4>辽师的"隐藏门槛"：手绘图解</h4>
+        <p>711 除了论述，还要求<b>用黑色签字笔手绘世界名作的图解</b>（构图、人物动态、结构线）。这条对纯艺学生是<b>白送的分</b>——但前提是平时练过"5 分钟抓构图"的速记，而不是临摹细节。</p>
+        <p>反过来，对非美术背景的跨考生这是灾难，所以辽师这条实际上在<b>筛掉纯背书型选手</b>。</p>
+      </div>
+      <div class="card orange">
+        <h4>沈师的"隐性难点"：评析写作</h4>
+        <p>646 的 100 分是<b>写</b>——看着自己画的草图，写 1000 字以上的创作评析，要求"结合艺术原理与美术史理论"、字迹清晰、40 分钟内成篇。</p>
+        <p>画画好但写不出来的学生，这 100 分会拿到 60–70；练过的能到 85+。<b>这 100 分才是沈师真正的分水岭</b>，不是那张草图。</p>
+      </div>
+    </div>
+
+    <p class="quote">注意：辽师 2026 年把 711／809 的科目代码与内容做了对调（2023 年时 711 是中国美术史、809 是外国美术史），参考书也从"只考央美两本简史"扩到"尹吉男＋张敢"。<b>复习时务必以当年 9 月发布的最新大纲为准</b>，别买错往年资料。</p>
+  </section>
+
+  <!-- ================= 03 ================= -->
+  <section id="s-score" data-toc="分数与录取">
+    <h2><span class="num">03</span>分数与录取：把"复试线"和"录取线"分开看</h2>
+
+    <p>两校的<b>公开复试线都是国家线</b>，且差额比例都是 <b>120%</b>。所以"复试线 354"这个数字对择校几乎没有参考价值——真正的门槛是<b>录取最后一名考了多少分</b>。</p>
+
+    <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:11%">年份</th>
+          <th class="center">艺术学国家线<br>（A 区·总分／单科）</th>
+          <th class="center">辽师 135600<br>拟招</th>
+          <th class="center">辽师<br>最低录取分</th>
+          <th class="center">沈师 135600<br>计划</th>
+          <th class="center">沈师<br>最低录取分</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2022</td><td class="num-cell">361</td><td class="num-cell">—</td><td class="num-cell">—</td><td class="num-cell">—</td><td class="num-cell">—</td></tr>
+        <tr><td>2023</td><td class="num-cell">362</td><td class="num-cell">—</td><td class="num-cell">—</td><td class="num-cell">—</td><td class="num-cell">—</td></tr>
+        <tr><td>2024</td><td class="num-cell">362 / 40·60</td><td class="num-cell">22</td><td class="num-cell">—</td><td class="num-cell">—</td><td class="num-cell">—</td></tr>
+        <tr><td>2025</td><td class="num-cell">351 / 37·56</td><td class="num-cell">22</td><td class="num-cell"><b>≈380</b> <span class="tag t-warn">三方</span></td><td class="num-cell">21（实录）</td><td class="num-cell"><b>≈377</b> <span class="tag t-warn">三方</span></td></tr>
+        <tr><td>2026</td><td class="num-cell">354 / 38·57</td><td class="num-cell">23（美20＋书3）</td><td class="num-cell"><b>388</b> <span class="tag t-ok">官方</span></td><td class="num-cell">29（下达）</td><td class="num-cell"><b>357</b> <span class="tag t-ok">官方</span></td></tr>
+        <tr><td>2027</td><td class="num-cell">待公布</td><td class="num-cell">23（美20＋书3）</td><td class="num-cell">—</td><td class="num-cell">待公布</td><td class="num-cell">—</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="src">标签说明：<span class="tag t-ok">官方</span> 来自院校公示名单逐条统计；<span class="tag t-warn">三方</span> 来自公开整理，方向可信但非原始文件，建议自查。空白处为该年度未获取到可靠数据，不做推测填充。</p>
+
+    <h3>2026 年真实分数分布 <span class="badge t-blue">全篇最有价值的一张图</span></h3>
+    <div class="chart-box">
+      <div class="legend">
+        <span><i style="background:#1a5fa8"></i>辽师：20 名拟录取考生（不含 2 名士兵计划）<em style="font-style:normal;color:#1a5fa8;font-weight:600">中位 397</em></span>
+        <span><i style="background:#a85a17"></i>沈师：29 名进入复试考生<em style="font-style:normal;color:#a85a17;font-weight:600">中位 374</em></span>
+        <span><i style="background:#a92720;border-radius:1px"></i>国家线 354</span>
+      </div>
+      <svg viewBox="0 0 720 220" role="img" aria-label="两校2026年初试总分分布对比">
+        <line x1="64" y1="18" x2="64" y2="176" stroke="#e4e8ed"/>
+        <line x1="64" y1="176" x2="704" y2="176" stroke="#c9cfd6"/>
+        <g id="gridlines"></g>
+        <line id="natline" x1="0" y1="18" x2="0" y2="172" stroke="#a92720" stroke-width="1.4" stroke-dasharray="5 4" opacity=".75"/>
+        <text id="natlabel" x="0" y="12" font-size="11.5" font-weight="700" fill="#a92720">国家线 354</text>
+        <text x="6" y="72" class="ax" font-weight="700">辽师</text>
+        <text x="6" y="148" class="ax" font-weight="700">沈师</text>
+        <g id="ticks"></g>
+        <g id="dotsA"></g>
+        <g id="dotsB"></g>
+      </svg>
+    </div>
+
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:26%">指标</th><th class="center">辽师（录取 20 人）</th><th class="center">沈师（进复试 29 人）</th><th class="center">差距</th></tr></thead>
+      <tbody>
+        <tr><td>最高分</td><td class="num-cell">416</td><td class="num-cell">423</td><td class="num-cell">—</td></tr>
+        <tr><td>最低分</td><td class="num-cell"><b>388</b></td><td class="num-cell"><b>357</b></td><td class="num-cell" style="color:#a92720"><b>31 分</b></td></tr>
+        <tr><td>平均分</td><td class="num-cell">397.2</td><td class="num-cell">379.0</td><td class="num-cell" style="color:#a92720"><b>18 分</b></td></tr>
+        <tr><td>中位数</td><td class="num-cell">397</td><td class="num-cell">374</td><td class="num-cell" style="color:#a92720"><b>23 分</b></td></tr>
+        <tr><td>380 分以上占比</td><td class="num-cell">20 / 20（100%）</td><td class="num-cell">5 / 29（17%）</td><td class="num-cell">—</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="lede">
+      <p><b>怎么读这张图：</b>辽师整条"分数线"整体右移，最低点比沈师高出 31 分；沈师则是一条从 357 到 423 的长尾，说明<b>报考人群水平参差、高分段不密集</b>。对中上水平的考生，沈师是"够得着"的，辽师是"要跳一下"的。</p>
+    </div>
+
+    <h3>录取人数与竞争结构</h3>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:16%">项目</th><th style="width:42%">辽师</th><th style="width:42%">沈师</th></tr></thead>
+      <tbody>
+        <tr><td>2026 计划→实录</td><td class="blue">美术 20（另录士兵计划 2 人，最低 244／347）＋书法 3 人，合计 <b>25</b></td><td class="orange">下达计划 <b>29</b>，一志愿进复试 <b>29</b>，<b>无调剂</b></td></tr>
+        <tr><td>复试差额</td><td class="blue">按 120% 划线，进复试约 24 人竞争 20 个名额，末位淘汰 4 人</td><td class="orange">上线人数＝计划数，<b>实际接近等额</b>（复试不及格除外）</td></tr>
+        <tr><td>生源特征</td><td class="blue">一志愿满额、不接受调剂；高分段密集（397 分只是中位）</td><td class="orange">2026 年一志愿未招满的迹象明显（<b>2025 年录 21 人、2026 年扩到 29 人</b>）</td></tr>
+        <tr><td>书法方向</td><td class="blue">单独排名，2026 录 3 人，最低 390 分</td><td class="orange">2027 年首次新增 06 书法方向（<b>新开方向通常头两年竞争较轻</b>）</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout warn">
+      <p><span class="tag-h">注意</span>沈师 2026 年从目录的 14 人扩到 29 人，属于国家计划调整带来的扩招，<b>不能线性外推到 2027 年</b>。若 2027 回落到 15–20 人，录取分很可能抬到 370–380。</p>
+    </div>
+  </section>
+
+  <!-- ================= 04 ================= -->
+  <section id="s-interview" data-toc="复试怎么考">
+    <h2><span class="num">04</span>复试怎么考（流程、分值、权重）</h2>
+
+    <p>两校都是<b>现场复试</b>、都在 3 月下旬，而且总成绩公式都是 <b>"初试 70% ＋ 复试 30%"</b>——但换算尺度不同，导致复试的"含金量"差别很大。</p>
+
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:18%">环节</th><th style="width:41%">辽宁师范大学</th><th style="width:41%">沈阳师范大学</th></tr></thead>
+      <tbody>
+        <tr><td>时间</td><td class="blue">3 月 27–28 日（2026 年）<br>地点：黄河路校区南院<b>美术馆</b></td><td class="orange">3 月 28 日–4 月 1 日（2026 年）<br>地点：美术与设计学院</td></tr>
+        <tr><td>专业笔试</td><td class="blue"><b>素描 50 分</b>（9:30–11:30）＋ <b>色彩 50 分</b>（13:30–15:30）<br><span class="note">各 2 小时，学院提供画板画架画纸，画材自备</span></td><td class="orange"><b>专业知识测试 30 分</b>（笔试 3 小时）<br>科目：① 素描 ② 专业基础</td></tr>
+        <tr><td>综合面试</td><td class="blue">综合素质 40 分（含作品／获奖材料展示）</td><td class="orange">专业面试 50 分（专业素质＋综合素质）</td></tr>
+        <tr><td>外语</td><td class="blue">口语听力 10 分</td><td class="orange">外语听说 <b>20 分</b>（口语 10＋听力 10，含 2–3 分钟英文自我介绍）</td></tr>
+        <tr><td>复试总分</td><td class="blue">150 分（专业知识 100＋综合 40＋外语 10）</td><td class="orange">100 分（面试 50＋笔试 30＋外语 20）</td></tr>
+        <tr><td>总成绩公式</td><td class="blue">(初试÷5)×0.7 ＋ (复试÷1.5)×0.3</td><td class="orange">(初试÷5)×0.7 ＋ 复试×0.3</td></tr>
+        <tr><td>换算后 1 分复试 = 多少初试分</td><td class="blue"><b>1.43 分</b></td><td class="orange"><b>2.14 分</b></td></tr>
+        <tr><td>及格线</td><td class="blue">复试总成绩 &lt; 90 分不予录取</td><td class="orange">各单项 60% 为及格，不及格不予录取</td></tr>
+        <tr><td>面试时长</td><td class="blue">每人不少于 20 分钟</td><td class="orange">每人不少于 20 分钟</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>两个容易被忽略的点</h3>
+    <ul>
+      <li><b>沈师的复试"更值钱"。</b>虽然都是 30% 权重，但沈师复试是百分制，<b>复试 1 分抵初试 2.1 分</b>；辽师是 150 分制，复试 1 分只抵 1.43 分。所以考沈师，<b>初试过线后复试的翻盘空间更大</b>——反过来说，初试分不高也别放弃，复试占比实打实。</li>
+      <li><b>辽师的复试就是纯艺主场。</b>素描＋色彩各 50 分共 100 分，占复试的 2/3，纯艺学生只要手上功夫在，这 100 分基本能吃满；面试和外语只占 50 分。这也是辽师"初试拼命、复试回血"的结构。</li>
+      <li><b>沈师的外语占 20 分</b>，是辽师的两倍，且明确要求 2–3 分钟英文自我介绍＋问答。英语差的要提前 2 个月背稿。</li>
+    </ul>
+
+    <p class="quote">材料准备（两校都要）：身份证、准考证、学生证／学历备案表、政审表（现实表现表）、诚信复试承诺书。<b>辽师要求提前把所有材料合成一个 PDF 发到学院邮箱（lsmsxyyjs@163.com），命名"报考专业+姓名+复试资格审核资料"，2026 年的截止时间是 3 月 26 日 10 点</b>——错过等于放弃复试。</p>
+  </section>
+
+  <!-- ================= 05 ================= -->
+  <section id="s-study" data-toc="怎么学：备考路线">
+    <h2><span class="num">05</span>怎么学：两条完全不同的备考路线</h2>
+
+    <p>下面的规划按<b>2027 年 12 月初试（2028 年 9 月入学）</b>倒排，全程约 13 个月。如果目标是 2027 年入学（2026 年 12 月 19–20 日初试），只剩 1 个月，请直接跳到本节末尾的"一个月应急版"。</p>
+
+    <h3>路线 A：辽师（史论双卷）<span class="badge t-blue">记忆型</span></h3>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:14%">阶段</th><th style="width:45%">711 外国美术史</th><th style="width:41%">809 中国美术史</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>现在–2 月</b><br><span class="note">通读打底</span></td>
+          <td class="blue">央美《外国美术简史》读第 1 遍，只求"有画面感"：按 原始→古埃及／两河→希腊罗马→中世纪→文艺复兴→巴洛克→18／19 世纪→现代 拉时间轴，每节记 3 个代表作</td>
+          <td class="blue">尹吉男《中国美术史》读第 1 遍；同步看央美《中国美术简史》补细节。重点先抓<b>山水画、人物画、花鸟画三条线</b>＋石窟／宗教美术</td>
+        </tr>
+        <tr>
+          <td><b>3–6 月</b><br><span class="note">专题化</span></td>
+          <td class="blue">按"题材／流派"做专题卡：文艺复兴三杰、威尼斯画派、荷兰小画派、印象派—后印象、立体主义—抽象…每张卡写"时代背景＋风格特征＋2 个代表作＋1 句评价"</td>
+          <td class="blue">按朝代做专题：先秦青铜、秦汉画像石、魏晋"六法"与顾恺之、唐代人物与青绿山水、宋院体与文人画、元四家、明清流派、近现代"美术革命"</td>
+        </tr>
+        <tr>
+          <td><b>7–8 月</b><br><span class="note">启动手绘</span></td>
+          <td class="blue" colspan="2"><b>每天 1 张"名作图解"</b>：只画构图骨架＋主要人物姿态＋关键道具，<b>限时 8 分钟、黑色签字笔、不上调子</b>。先临构图，不求像。积累 60–80 张后，你会形成"看画拆结构"的条件反射——这是 711 拉开差距的地方</td>
+        </tr>
+        <tr>
+          <td><b>9–10 月</b><br><span class="note">输出训练</span></td>
+          <td class="blue">每周 2 篇 800–1000 字论述（限时 40 分钟手写）；用真题／大纲知识点自命题，如"论述文艺复兴威尼斯画派与佛罗伦萨画派的差异"</td>
+          <td class="blue">同上，中国美术史侧重"源流演变"类大题，如"简述中国山水画的发展脉络及各时期代表"</td>
+        </tr>
+        <tr>
+          <td><b>11–12 月</b><br><span class="note">默写冲刺</span></td>
+          <td class="blue">合书默写时间轴＋专题卡；每周 1 次全真模拟（3 小时：2 篇论述＋3 张图解）</td>
+          <td class="blue">默写朝代框架；高频考点押题 20 个；错题回炉</td>
+        </tr>
+        <tr>
+          <td><b>全程</b></td>
+          <td colspan="2">政治：7 月起跟强化课，10 月起刷选择题，12 月背大题。<br>英语二：每天 30 分钟单词不断，5 月起真题精读（近 15 年），10 月起作文模板化。<br><b>目标分：政治 68＋ / 英语 60＋ / 711 125＋ / 809 125＋ ≈ 378</b>，但辽师要 <b>390</b> 才稳，所以专业课两卷要往 <b>130＋130</b> 冲。</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>路线 B：沈师（创作＋理论）<span class="badge t-warn">动手型</span></h3>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:14%">阶段</th><th style="width:45%">646 创作与评析（150）</th><th style="width:41%">830 艺术理论（150）</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>现在–2 月</b><br><span class="note">熟悉题型</span></td>
+          <td class="orange">先搞清楚"命题创作草图"长什么样：找 3–5 套真题／模拟题，各画 1 张（铅笔，A3，3 小时内完成草图上稿），体会"50 分要画到什么完成度"</td>
+          <td class="orange">四本书过第 1 遍：中外美术史各 1 本＋《艺术学概论》。艺术概论最容易拿分，先建框架（本质→创作→作品→接受→发展）</td>
+        </tr>
+        <tr>
+          <td><b>3–6 月</b><br><span class="note">双线推进</span></td>
+          <td class="orange">每周 2 张命题草图（人物组合、场景、主题性创作各练）；<b>每张都配 1 篇 1000 字评析</b>，形成"立意—构图—形象—技法—理论支撑—升华"六段式模板</td>
+          <td class="orange">名词解释＋作品赏析做成卡片（每卡：年代／作者／内容／形式／意义 五要素），每天背 5 张；选择题靠刷题本</td>
+        </tr>
+        <tr>
+          <td><b>7–8 月</b><br><span class="note">集训冲刺</span></td>
+          <td class="orange"><b>关键期</b>：如果有条件，进画室／集训营做 10–15 张完整命题创作；每周固定 1 次"3 小时全流程"（草图 60 分钟＋评析 90 分钟＋检查）</td>
+          <td class="orange">四本书第 2 遍，做章节思维导图；开始练"作品赏析"的 400 字标准答法</td>
+        </tr>
+        <tr>
+          <td><b>9–10 月</b><br><span class="note">限时输出</span></td>
+          <td class="orange">每周 1 套完整 646 模拟（3 小时整），重点练<b>手写速度</b>：1000 字要在 40 分钟内写完且字迹工整</td>
+          <td class="orange">默写名词解释 100 个；论述题每周 1 篇；错题回炉</td>
+        </tr>
+        <tr>
+          <td><b>11–12 月</b></td>
+          <td class="orange">保持手感：每周 1 张草图＋1 篇评析即可，重点转向背诵</td>
+          <td class="orange">三轮记忆＋押题；做 2 套全真模拟</td>
+        </tr>
+        <tr>
+          <td><b>全程</b></td>
+          <td colspan="2">政治、英语节奏同上。<b>目标分：政治 65＋ / 英语 55＋ / 646 115＋ / 830 120＋ ≈ 355</b>，为求稳把目标定在 <b>370</b>。<br>沈师的分数结构决定了：<b>646 只要不失误（110＋），830 背扎实（120＋），就基本能进</b>。</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>一个月应急版（若今年 12 月就考）</h3>
+    <ul>
+      <li><b>辽师：</b>放弃通读，直接背"专题卡＋时间轴"；每天 3 张名作图解（限时 6 分钟）；背 20 篇论述范文的框架；政治只背肖四肖八，英语只做阅读真题＋背作文模板。</li>
+      <li><b>沈师：</b>646 定型 1 套自己的构图模板（人物组合＋场景），考场直接套；背 5 篇 1000 字评析范文的句式；830 只背高频名词解释 80 个＋艺术概论框架。</li>
+    </ul>
+  </section>
+
+  <!-- ================= 06 ================= -->
+  <section id="s-course" data-toc="网课与资料">
+    <h2><span class="num">06</span>网上有什么课（免费＋付费，按需取用）</h2>
+
+    <p>先说结论：<b>公共课靠网课完全够用，专业课的"课"只能解决 40%，剩下 60% 靠背诵默写和画面批改。</b>别把希望寄托在"全程班包过"上。</p>
+
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:14%">科目</th><th style="width:46%">推荐资源</th><th style="width:40%">怎么用</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>外国美术史</b></td>
+          <td>
+            <b>张敢《外国美术史》</b>（清华，B 站／学堂在线可搜到公开课）——他正是辽师 711 的指定教材作者，讲法与出题口径最贴<br>
+            <b>孙乃树《西方美术史》</b>（华东师大，B 站）——通俗、有激情，第一遍建立兴趣和画面感最好用
+          </td>
+          <td>第一遍用孙乃树"看着玩"，建立图像记忆；第二遍用张敢对照教材做笔记</td>
+        </tr>
+        <tr>
+          <td><b>中国美术史</b></td>
+          <td><b>中央美院《中国美术史》公开课</b>（B 站，尹吉男团队相关讲座）＋ 中国大学 MOOC 上的美术史课程；沈师 830 用马工程版教材，可对照教材配套课件</td>
+          <td>中国美术史信息密度大，视频只用来"过一遍朝代"，主体靠教材＋专题卡</td>
+        </tr>
+        <tr>
+          <td><b>艺术概论</b></td>
+          <td>中国大学 MOOC《艺术学概论》；B 站按"彭吉象／马工程 艺术学概论 串讲"搜索</td>
+          <td>只对沈师 830 有用；框架（本质—创作—作品—接受—发展）先立起来，再填例子</td>
+        </tr>
+        <tr>
+          <td><b>手绘／创作</b></td>
+          <td>B 站搜"速写 构图 命题创作""素描 场景组合"；站酷高高手、美术宝有系统课；线下画室（沈阳鲁迅美院周边、大连校区周边）短期集训效率最高</td>
+          <td>辽师练"名作结构速记"，沈师练"命题草图成稿"，方向不同别混练</td>
+        </tr>
+        <tr>
+          <td><b>政治</b></td>
+          <td>徐涛（强化班，讲透原理）、腿姐（技巧班＋冲刺背诵）</td>
+          <td>7–9 月看强化，10–11 月刷选择题，12 月背冲刺资料</td>
+        </tr>
+        <tr>
+          <td><b>英语二</b></td>
+          <td>田静（语法长难句）、唐迟（阅读逻辑）、石雷鹏（作文模板）</td>
+          <td>艺术类考生英语普遍弱，<b>英语是性价比最高的提分项</b>：从 45 提到 60 分，比专业课从 120 提到 130 容易得多</td>
+        </tr>
+        <tr>
+          <td><b>专业课付费课</b></td>
+          <td>
+            <b>圣才</b>（辽师 711/809 配套精讲＋题库，资料贴合度高）<br>
+            <b>专注辽师的机构</b>：如大连的臻尚艺术教育（公开宣传主打辽师，声称覆盖大量录取名额）<br>
+            <b>覆盖两校的机构</b>：立岩（书法与美术考研）、鸿都（辽师书法方向）等
+          </td>
+          <td>
+            <b>建议只买三样：</b>① 史论真题／模拟题批改（有人给你改论述，比听课有用 10 倍）② 复试素描色彩模拟打分 ③ 一对一答疑。<br>
+            机构宣传的"录取率""内部资料"一律打折看，<b>先试听、后付款、别买三年长线包</b>
+          </td>
+        </tr>
+        <tr>
+          <td><b>找学长学姐</b></td>
+          <td>小红书／闲鱼／QQ 群搜"辽师美院 美术 上岸""沈师 美术 646"，付费请对方改 2–3 篇论述、看 2–3 张画</td>
+          <td>性价比最高的"课"：几十到几百块，能直接告诉你"这个答法能得几分"</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p class="note">检索建议：以上资源在 B 站、中国大学 MOOC、学堂在线均可按名称搜到；机构课程价格与质量差异大，建议先看试听再决定。本报告不对任何机构做背书。</p>
+  </section>
+
+  <!-- ================= 07 ================= -->
+  <section id="s-career" data-toc="毕业去向">
+    <h2><span class="num">07</span>毕业去向：两校的差别在"留在哪"</h2>
+
+    <p>两校都是省属师范院校，美术专硕的出口结构高度相似，<b>核心差异是就业城市</b>：辽师毕业生集中在大连＋沈阳，沈师毕业生高度集中在沈阳。</p>
+
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:20%">指标</th><th style="width:40%">辽宁师范大学</th><th style="width:40%">沈阳师范大学</th></tr></thead>
+      <tbody>
+        <tr><td>主要就业城市</td><td class="blue">大连 43% ／ 沈阳 23% ／ 北京 13%</td><td class="orange">沈阳 54% ／ 北京 11% ／ 大连 10%</td></tr>
+        <tr><td>第一大行业</td><td class="blue">教育（16%），校园双选会中教育行业岗位占 <b>60%</b></td><td class="orange">教育（16%），秋招约七成单位为辽宁本地、教育近半</td></tr>
+        <tr><td>单位性质</td><td class="blue"><b>中初教育单位 19%</b>、其他企业 14%、自由职业 11%</td><td class="orange">其他企业 38%、<b>中初教育单位 10%</b>、机关 3%</td></tr>
+        <tr><td>应届起薪（全校口径）</td><td class="num-cell">约 5600 元/月</td><td class="num-cell">约 5500 元/月</td></tr>
+        <tr><td>升学</td><td class="blue">无美术类博士点，读博需外考（东北师大、鲁美、南艺等）</td><td class="orange">同左</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="src">说明：以上为两校<b>全校</b>就业质量数据口径（本科＋研究生混合），非美术学院单独统计；美术学院层面的公开数据仅有"就业工作获校级表彰"这类定性信息。请以此判断"大方向"而非"精确比例"。</p>
+
+    <h3>美术专硕的实际出路（按比例从高到低）</h3>
+    <ol>
+      <li><b>中小学美术教师（编制）</b>——最大出口。需要：教师资格证（读研期间必须考下来）＋参加各地教师招聘考试。辽师在大连／辽宁教育系统认可度高；沈师在沈阳及周边地市招聘中占主场优势。<b>这是选校时最该考虑的一条。</b></li>
+      <li><b>校外培训／艺考机构</b>——收入弹性大，稳定性差，多作为过渡。</li>
+      <li><b>文化馆、美术馆、博物馆、群艺馆</b>——事业单位编制，岗位少、竞争激烈，往往要求展览策划或公教经验。</li>
+      <li><b>设计／文创／出版／新媒体公司</b>——需要额外补软件与项目经验，纯艺背景要主动补课。</li>
+      <li><b>高校辅导员、中职／高职教师</b>——部分岗位接受硕士，需党员身份或特定条件。</li>
+      <li><b>读博／职业艺术家</b>——比例很低，通常需要持续创作产出与展览履历。</li>
+    </ol>
+
+    <div class="lede">
+      <p><b>一句实话：</b>这两所学校的文凭在"考教师编"这件事上是够用的，但在"进高校当老师""进头部设计公司"上都不算强。所以<b>选校时优先考虑"你打算在哪个城市考编"</b>——想留大连选辽师，想留沈阳选沈师，这个权重比学校排名更实际。</p>
+    </div>
+  </section>
+
+  <!-- ================= 08 新增：教师 ================= -->
+  <section id="s-teacher" data-toc="想当老师：谁更容易">
+    <h2><span class="num alt">08</span>想当老师：两校谁更容易"上岸"教师编</h2>
+
+    <p>这个问题要拆成两半看：<b>学校之间的差别</b>（小），和<b>路径选择的差别</b>（大）。很多人在第一步纠结错了对象。</p>
+
+    <h3>一、学校之间：只有两条是硬差别</h3>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:22%">对比项</th><th style="width:40%">辽宁师范大学</th><th style="width:38%">沈阳师范大学</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>毕业生进入<br>"中初教育单位"的比例</td>
+          <td class="blue"><b>19%</b></td>
+          <td class="orange"><b>10%</b></td>
+        </tr>
+        <tr>
+          <td>校招公告投放的高校</td>
+          <td class="blue">大连各区教育局的校园招聘公告，基本都在<b>辽师就业网首发</b>。例：旅顺口区教育系统 2026 年第二批次自主招聘 44 人，公告明确投放辽师、沈师、大连大学、鞍山师范学院等高校网站</td>
+          <td class="orange">沈阳各区、辽北地市招聘会的主场；本地中小学教师来源的主力院校</td>
+        </tr>
+        <tr>
+          <td>就业城市</td>
+          <td class="blue">大连 43%／沈阳 23%</td>
+          <td class="orange">沈阳 54%／大连 10%</td>
+        </tr>
+        <tr>
+          <td>师范底色</td>
+          <td class="blue">老牌省属师大，辽宁基础教育系统的"嫡系"，大连中小学教研系统的校友密度高</td>
+          <td class="orange">同为省属师大，沈阳本地认可度扎实；美术与设计学院方向细，画种对应清楚</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="src">"中初教育单位"占比取自两校就业质量报告的全校口径（含本科），不代表美术学院单独数据，只能看方向。</p>
+
+    <p><b>结论：</b>只看"当老师的概率"，<b>辽师略占优势</b>——进中初教育单位的比例高出近一倍，且大连教育系统校招把辽师当首站。但这个差距，<b>明显小于"留在哪个城市"造成的差距</b>。真正的分水岭是：<b>她打算在大连考编，还是在沈阳考编。</b></p>
+
+    <h3>二、真正决定成败的三件事</h3>
+    <div class="grid3">
+      <div class="card blue">
+        <h4>① 专业代码对不对</h4>
+        <p>美术教师岗的招聘公告会列出"可报考专业"。这决定她读了研之后"能不能报名"。</p>
+        <p><b>两校的 135600 都在目录里</b>——所以"读了没用"这个说法在教师招聘这条路上不成立。</p>
+      </div>
+      <div class="card green">
+        <h4>② 有没有教资</h4>
+        <p>初中／高中<b>美术</b>教师资格证是硬门槛，公告里写"须具有初中及以上美术教师资格证"。</p>
+        <p>本科大三就能考。<b>别等读研再考</b>，那时候每一分时间都要给初试。</p>
+      </div>
+      <div class="card orange">
+        <h4>③ 走哪条招聘通道</h4>
+        <p>校招／自主招聘（只面试）vs 社招（事业单位联考，要笔试）。</p>
+        <p>硕士学历在这条分岔口上的作用最大——它决定她能进哪个考场。</p>
+      </div>
+    </div>
+
+    <div class="callout info">
+      <p><span class="tag-h">原文</span><b>2026 年大连市沙河口区教育系统招聘应届毕业生（初中美术，3 人）的专业要求：</b>研究生——1356 美术与书法、1304 美术学、1305 设计学、135107 美术、135108 艺术设计、040102 课程与教学论（美术）、045113 学科教学（美术）；<b>以研究生身份报考的，本科应为 1304 美术学类、1305 设计学类</b>。</p>
+      <p>解读：① 135600（新目录里的 1356 美术与书法）被明确承认；② 她本科读的<b>美术学属于 1304 美术学类</b>，符合"本科专业"这条限制（以毕业证上的专业名称为准）；③ 本科是美术学类，研究生读 1356，是这条路上最"干净"的组合。</p>
+    </div>
+
+    <h3>三、教师编的三条入口（按"容易程度"排）</h3>
+    <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th style="width:20%">通道</th><th style="width:16%">时间</th><th style="width:26%">考什么</th><th style="width:20%">谁能报</th><th style="width:18%">难度</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>区教育局 自主招聘<br>／校园招聘</b></td>
+          <td>每年 10–12 月<br>次年 4–6 月</td>
+          <td class="center"><b>只面试</b>：试讲＋面谈<br><span class="note">旅顺口区 2026 年：面试 100 分，60 分合格，按 2:1 开考</span></td>
+          <td>应届毕业生（含择业期 2 年）＋<b>硕士</b>，或师范类本科（音体美可放宽到非师范艺术院校）</td>
+          <td class="center"><span class="tag t-ok">最容易</span><br><span class="note">免笔试，竞争者被学历门槛先筛一遍</span></td>
+        </tr>
+        <tr>
+          <td><b>事业单位联考<br>（D 类·中小学教师）</b></td>
+          <td>2 月报名<br>3 月底笔试</td>
+          <td class="center">职业能力倾向测验＋综合应用能力（D 类），再面试试讲</td>
+          <td>本科及以上；<b>不少社招岗要求 2 年以上教学经历</b></td>
+          <td class="center"><span class="tag t-warn">中等</span><br><span class="note">岗位多，但应届可报的少</span></td>
+        </tr>
+        <tr>
+          <td><b>各市／区教育局<br>统一公开招聘</b></td>
+          <td>全年分散</td>
+          <td class="center">教育综合知识＋学科专业知识（美术）＋面试</td>
+          <td>本科及以上，多数限应届或不限</td>
+          <td class="center"><span class="tag t-bad">最难</span><br><span class="note">美术岗少，报录比常年畸高</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p><b>为什么第一条最重要：</b>2026 年大连旅顺口区教育系统自主招聘的招聘对象，<b>第一条就是"国内各高校研究生学历、硕士及以上学位应届毕业生"</b>，全程只有面试（试讲＋面谈），没有笔试。这种岗位的竞争者数量，和"几百人抢一个编制"的社招完全不是一个量级——因为学历门槛已经先筛掉了一大批人。<b>这就是读研在"当老师"这件事上最实的一份红利</b>，不是学历崇拜，是考场不同。</p>
+
+    <h3>四、必须知道的现实：小学在缩编，中学在扩招</h3>
+    <p>如果她只盯着"小学美术老师"，需要先看清趋势——这不是劝退，是让她把目标定在正确的位置上。</p>
+
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:26%">信号</th><th style="width:44%">具体数据</th><th style="width:30%">对美术生的含义</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>小学岗位整体萎缩</td>
+          <td>2026 年南京市教师招聘，全市<b>小学主科教师仅招 2 人</b>（且是特教学校岗位）；常州武进区小学教师停止招聘，清退 110 名编外教师</td>
+          <td>小学是收缩最快的一段</td>
+        </tr>
+        <tr>
+          <td>音美岗位"卷王"</td>
+          <td>2026 年湖南教招，部分音美岗位<b>竞争比高达 193:1</b>；长沙芙蓉区小学岗只剩语文，音乐、体育、美术岗位直接消失</td>
+          <td>岗位少＋报名多，社招通道极难</td>
+        </tr>
+        <tr>
+          <td>幼儿园已在收缩</td>
+          <td>2024 年全国幼儿园专任教师<b>减少 24.18 万人</b>，连续两年下降（2022 年 324.42 万 → 2024 年 283.19 万）</td>
+          <td>学前段不能作为退路</td>
+        </tr>
+        <tr>
+          <td>中学进入窗口期</td>
+          <td>2026 年湖南教招：小学岗急剧萎缩，<b>中学进入扩招窗口期</b>（湘江新区一年扩招 350 名中学教师）；考编年龄放宽到 38 周岁</td>
+          <td><b>初中／高中美术是更该盯的方向</b></td>
+        </tr>
+        <tr>
+          <td>小班化是长期利好</td>
+          <td>政策方向：推进小班化教学，音体美、心理、劳动等素质课程需要专职教师，替代"主科老师兼任"</td>
+          <td>方向正确，但落地靠财政，节奏慢</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout warn">
+      <p><span class="tag-h">推算</span><b>时间点其实不算差。</b>2016 年前后是出生人口的高峰（约 1700 万／年），这批孩子<b>约 2029 年进入初中</b>；而 2022 年后出生人口降到 900 万上下，要到 2035 年前后才影响初中。也就是说，<b>2029–2031 年正好是初中学位需求的高位</b>——如果她 2028 年入学、2031 年毕业，撞上的是初中段的最后一个高峰，而不是小学段的塌陷期。这是人口数据推算，不是官方预测，但方向可以参考。</p>
+    </div>
+
+    <h3>五、如果目标就是当老师：还有个"选项 C"</h3>
+    <p>大部分人会默认在 135600（艺术硕士）里选，但如果目标是中小学教师，还有一条更对口的轨道：<b>045113 学科教学（美术）</b>——教育硕士，培养方案直接就是美术教师。</p>
+
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:16%">项目</th><th style="width:28%">辽师 045113</th><th style="width:28%">沈师 045113</th><th style="width:28%">对照：135600</th></tr></thead>
+      <tbody>
+        <tr><td>学位类型</td><td class="blue">教育硕士（专硕）</td><td class="orange">教育硕士（专硕）</td><td>艺术硕士（专硕）</td></tr>
+        <tr><td>归属学院</td><td class="blue">美术学院</td><td class="orange">教师教育学院</td><td>美术学院／美术与设计学院</td></tr>
+        <tr><td>初试专业课</td><td class="blue">③ <b>333 教育综合</b><br>④ <b>809 中国美术史</b></td><td class="orange">③ <b>333 教育综合</b><br>④ <b>820 教育政策与法规</b><br><span class="note">（2026 目录；往年曾考 830 中外美术史，务必核对当年 PDF）</span></td><td>两门美术史论／创作＋理论</td></tr>
+        <tr><td>学制</td><td class="blue"><b>2 年</b>（比 135600 早一年毕业）</td><td class="orange">以目录为准（第三方显示 3 年）</td><td>3 年</td></tr>
+        <tr><td>招生人数</td><td class="blue"><b>3 人</b>（2026）</td><td class="orange">全日制 2–5 人＋非全日制 1 人<br><span class="note">不同年份口径不一，需核对</span></td><td>23 人／29 人</td></tr>
+        <tr><td>走哪条国家线</td><td class="blue" colspan="2" style="text-align:center"><b>教育学：347 分，单科 48 / 72</b>（2026）</td><td><b>艺术学：354 分，单科 38 / 57</b></td></tr>
+        <tr><td>复试</td><td class="blue">见学院当年细则（本报告未取得原文）</td><td class="orange"><b>素描</b>；加试 速写、艺术概论</td><td>素描＋色彩／面试＋外语</td></tr>
+        <tr><td>核心优势</td><td class="blue">两年制、培养方案含教育实习，教师岗对口度最高</td><td class="orange">有<b>非全日制</b>选项，可"先上岸再读"</td><td>招生多、单科线低、容错高</td></tr>
+        <tr><td>核心风险</td><td class="blue" colspan="2"><b>单科线 48 分</b>是硬门槛——艺术生英语常在 40 出头；且名额只有个位数，一年波动极大；333 教育综合是四本书的纯背诵量</td><td>教师岗对"教育硕士"没有硬性倾斜，但两者都能报美术教师岗</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout ok">
+      <p><span class="tag-h">怎么选</span><b>英语能稳定考到 50 分以上</b>，且目标就是教师 → 045113 更对口，辽师还是两年制，早一年上岸。<b>英语大概率 40 出头</b> → 走 135600，用艺术学 38 分的单科线保命；教师岗并不会因为她是艺术硕士而拒之门外（大连的岗位目录里 1356 明确在列）。<b>不要为了"更对口"去撞一条自己过不了单科线的赛道</b>——这是最常见的翻车方式。</p>
+    </div>
+
+    <h3>六、教师向的时间表（按 2028 年入学倒排）</h3>
+    <ol class="steps">
+      <li><b>现在–2027 年 6 月：把教资考下来</b>本科大三／大四就能考初中或高中美术教资。笔试（综合素质、教育知识与能力、学科知识与教学能力·美术）＋面试试讲。这件事拖到读研，会和初试、复试抢时间。</li>
+      <li><b>研一（2028–2029）：攒"可展示的东西"</b>作品集整理成册（20–30 件，含创作思路）；争取一次市级以上展览或教学技能比赛；把普通话二级甲等考掉（语文以外学科多数要求二乙，但二甲更保险）。</li>
+      <li><b>研二（2029–2030）：进中学实习</b>主动争取到目标城市的初中／高中实习一学期。<b>实习学校往往就是后来的就业单位</b>，而且校招面试问的都是"你上过什么课"。</li>
+      <li><b>研三上（2030 年 10–12 月）：校招主战场</b>盯紧辽师／沈师就业网、目标区教育局公众号。这一段是"只面试"的岗位集中投放期，也是硕士学历最值钱的窗口。同时准备事业单位联考（次年 3 月）作为兜底。</li>
+      <li><b>研三下（2031 年 3–6 月）：补录与二次校招</b>很多区在春季还有第二批次（旅顺口区 2026 年第二批次就是 5 月发布、5 月现场报名）。别以为秋招结束就没机会了。</li>
+    </ol>
+  </section>
+
+  <!-- ================= 09 新增：读研 vs 考编 ================= -->
+  <section id="s-decision" data-toc="读研还是直接考编">
+    <h2><span class="num alt">09</span>"读完研也不好就业，不如直接考公考编"——这句话该怎么看</h2>
+
+    <p>这句话在美术圈流传很广，它有三分真、七分偷换概念。分开拆一下。</p>
+
+    <h3>先把"考公"和"考编"分开——这是两件完全不同的事</h3>
+    <div class="grid2">
+      <div class="card" style="border-color:var(--red-line);background:var(--red-soft)">
+        <h4 style="color:var(--red)">考公（公务员）</h4>
+        <ul>
+          <li><b>美术专业几乎没有对口岗位。</b>能报的基本是"三不限"，一个岗位几百人报名是常态，等于拿自己最不擅长的科目去打最卷的仗。</li>
+          <li><b>工作内容的核心就是写材料。</b>公文、简报、总结、领导讲话、调研报告——这是绝大多数基层岗位的日常，不是"偶尔写一下"。</li>
+          <li>她明确说<b>不喜欢写材料</b>。这一条基本就把考公排除了，而且排除得对：这不是"能不能考上"的问题，是"考上之后每天要干什么"的问题。</li>
+        </ul>
+      </div>
+      <div class="card green">
+        <h4 style="color:var(--green)">考编（教师编 / 事业编）</h4>
+        <ul>
+          <li><b>教师编是她的专业主场</b>：要教资、要试讲、要专业能力，美术功底直接变成分数。</li>
+          <li>日常工作对材料写作的要求远低于机关，主要是教案、教学反思——和她排斥的"公文材料"不是一回事。</li>
+          <li>文化馆、美术馆、文联的事业编技术岗也值得关注，但岗位极少，一年一个市可能就几个，只能当彩票，不能当主线。</li>
+        </ul>
+      </div>
+    </div>
+
+    <p><b>所以真问题不是"读研 vs 考公考编"，而是：用三年时间和一笔学费，换一张教师编的入场券，值不值。</b>考公那一支可以直接划掉。</p>
+
+    <h3>"读完研也不好就业"——这句话哪里真、哪里假</h3>
+    <div class="callout bad">
+      <p><span class="tag-h">这句话是真的</span>对<b>市场化就业</b>成立。设计公司、画廊、文创、艺考机构看的是作品和项目经验，硕士学历溢价很低，三年工作经验的性价比往往高于三年读研。如果她的目标是进公司，这句话基本正确。</p>
+    </div>
+    <div class="callout ok">
+      <p><span class="tag-h">这句话不适用</span>对<b>教师编</b>不成立。教师招聘不是市场化就业，它是<b>资格考试＋名额分配</b>。在这条路上，硕士不是"加分项"，是<b>"入场券"</b>——它决定她能不能走进那个只对硕士开放的考场。旅顺口区 2026 年自主招聘，招聘对象第一条就是"研究生学历、硕士及以上学位应届毕业生"，全程免笔试。这不是溢价，这是门槛。</p>
+    </div>
+
+    <h3>把两条路的账摊开算</h3>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:16%">维度</th><th style="width:42%">A 案：2027 年本科毕业直接考编</th><th style="width:42%">B 案：读研 3 年，2030–2031 年毕业再考</th></tr></thead>
+      <tbody>
+        <tr><td>时间</td><td>2027 年起全职备考，可连考 2–3 年</td><td>2028–2031 在读；毕业时 25–26 岁</td></tr>
+        <tr><td>可报岗位池</td><td>本科可报的岗位（音体美对非师范艺术院校有放宽）</td><td class="blue"><b>本科岗＋硕士专岗</b>，池子更大；且多一次"应届毕业生"身份</td></tr>
+        <tr><td>考试形态</td><td>主要是社招：笔试（教综＋学科）＋面试，报录比常见几十到上百比一</td><td class="blue">可走<b>校招／自主招聘，只面试</b>；同一岗位竞争者数量级下降</td></tr>
+        <tr><td>成本</td><td class="num-cell">0 学费</td><td class="num-cell">学费约 4.5 万（沈师 1.5 万×3）＋ 3 年机会成本</td></tr>
+        <tr><td>机会成本（粗算）</td><td>3 年可挣 <b>15–20 万</b>（按辽宁中小学教师起薪口径）</td><td>同期为负，净差约 20–25 万</td></tr>
+        <tr><td>主要风险</td><td class="blue">应届身份用掉就没了；2027–2029 小学岗位仍在收缩，可能"越考岗越少"</td><td class="orange">3 年后政策与岗位数不确定；若目标是小学，届时可能更卷</td></tr>
+        <tr><td>兜底能力</td><td class="blue">考不上 → 培训机构、自由职业、来年再战</td><td class="orange">有硕士学历，可转中职／高职教师、高校辅导员、文化馆，路径更宽</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>我的判断（如果你要一句明确的话）</h3>
+    <ol class="steps">
+      <li><b>考公，直接排除。</b>专业不对口＋工作内容她不喜欢，硬考"三不限"是双输。这不是"要不要努力"的问题，是方向错了。</li>
+      <li><b>教师编，建议读研——但理由不是"学历更高"。</b>理由是三条具体的通道：① 校招／自主招聘的免笔试通道，② 只对硕士开放的岗位，③ 硕士毕业"重置"一次应届生身份（本科那次如果没考上，身份就浪费了）。</li>
+      <li><b>有一种情况适合直接考编：</b>如果她 2027 年能在家乡（地级市或县城）拿到一个美术教师岗，且不执着大城市——那就先上岸。县中的岗位竞争小得多，编制先拿到手，比什么都实在。</li>
+      <li><b>还有一条折中路线，很多人不知道：</b><b>先考编上岸，再读非全日制教育硕士。</b>沈师 045113 就有非全日制名额（2026 年 1 人）。编制到手、工资有着落，学历慢慢补——这条路对"家里希望她早点稳定"的情况最合适。缺点是边工作边读很累，且非全在部分评职称场景里认可度不如全日制。</li>
+    </ol>
+
+    <div class="lede">
+      <p><b>一句话总结：</b>"读完研也不好就业"这句话，说的是<b>市场化就业</b>；而她想走的是<b>教师编</b>。在教师编这条路上，硕士不是加分项，是入场券。真正的风险不是"读了没用"，而是<b>读了三年，目标城市的岗位却更少了</b>——所以选校时要盯住"初中／高中"而不是"小学"，并且从研一开始就攒教学实习经历。</p>
+    </div>
+  </section>
+
+  <!-- ================= 10 ================= -->
+  <section id="s-choose" data-toc="怎么选：三个问题">
+    <h2><span class="num">10</span>怎么选：三个问题定结果</h2>
+
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:36%">问题</th><th style="width:32%">答"是"</th><th style="width:32%">答"否"</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>1. 她能不能坐下来背两本厚美术史，并且背到能默写朝代、流派、代表作？</b></td>
+          <td class="blue">可以 → 辽师（史论双卷对她不是负担）</td>
+          <td class="orange">不能 → 沈师（646 靠画，830 有四本书但题型更碎、更好拿分）</td>
+        </tr>
+        <tr>
+          <td><b>2. 她能不能在 40 分钟内手写出 1000 字条理清楚的创作说明？</b></td>
+          <td class="orange">能 → 沈师（这 100 分是她的护城河）</td>
+          <td class="blue">不能 → 辽师（辽师不考这个，只考论述）</td>
+        </tr>
+        <tr>
+          <td><b>3. 她毕业后想在哪个城市考编？</b></td>
+          <td class="blue">大连／辽南 → 辽师</td>
+          <td class="orange">沈阳／辽北 → 沈师</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>综合打分（通用版）</h3>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:24%">维度</th><th class="center" style="width:11%">权重</th><th class="center" style="width:12%">辽师</th><th class="center" style="width:12%">沈师</th><th style="width:41%">说明</th></tr></thead>
+      <tbody>
+        <tr><td>上岸概率</td><td class="num-cell">35%</td><td class="num-cell">6</td><td class="num-cell"><b>9</b></td><td>录取线差 31 分，沈师明显更稳</td></tr>
+        <tr><td>考试内容与能力匹配</td><td class="num-cell">25%</td><td class="num-cell">7</td><td class="num-cell"><b>8.5</b></td><td>纯艺学生画草图比背两本史更顺手</td></tr>
+        <tr><td>城市与就业半径</td><td class="num-cell">20%</td><td class="num-cell"><b>9</b></td><td class="num-cell">7.5</td><td>大连宜居、教师岗位质量高；沈阳岗位多但竞争也大</td></tr>
+        <tr><td>学科平台与方向细分</td><td class="num-cell">10%</td><td class="num-cell">7.5</td><td class="num-cell"><b>8</b></td><td>沈师方向细（国／油／版／水彩／雕塑），导师对应更明确</td></tr>
+        <tr><td>复试友好度</td><td class="num-cell">10%</td><td class="num-cell"><b>8.5</b></td><td class="num-cell">7</td><td>辽师复试 2/3 是素描色彩，纯艺主场；沈师外语占 20 分</td></tr>
+        <tr class="sum"><td>加权总分</td><td class="num-cell">100%</td><td class="num-cell">7.15</td><td class="num-cell">8.30</td><td>仅作决策辅助，非绝对结论</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>综合打分（教师导向版）</h3>
+    <p class="note">她明确想当老师，所以把"上岸概率"和"城市与教师编机会"的权重都提到 30%。</p>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:24%">维度</th><th class="center" style="width:11%">权重</th><th class="center" style="width:12%">辽师</th><th class="center" style="width:12%">沈师</th><th style="width:41%">说明</th></tr></thead>
+      <tbody>
+        <tr><td>上岸概率</td><td class="num-cell">30%</td><td class="num-cell">6</td><td class="num-cell"><b>9</b></td><td>考不上就没有"然后"，这一项权重最高</td></tr>
+        <tr><td>城市与教师编机会</td><td class="num-cell">30%</td><td class="num-cell"><b>9.5</b></td><td class="num-cell">7.5</td><td>辽师进中初教育单位 19%、大连校招首站；沈师沈阳主场</td></tr>
+        <tr><td>考试内容与能力匹配</td><td class="num-cell">20%</td><td class="num-cell">7</td><td class="num-cell"><b>8.5</b></td><td>同上</td></tr>
+        <tr><td>学科平台与方向细分</td><td class="num-cell">10%</td><td class="num-cell">7.5</td><td class="num-cell"><b>8</b></td><td>同上</td></tr>
+        <tr><td>复试友好度</td><td class="num-cell">10%</td><td class="num-cell"><b>8.5</b></td><td class="num-cell">7</td><td>同上</td></tr>
+        <tr class="sum"><td>加权总分</td><td class="num-cell">100%</td><td class="num-cell">7.65</td><td class="num-cell">8.15</td><td>差距从 1.15 缩小到 0.50</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout info">
+      <p><span class="tag-h">怎么读</span>把权重换成"教师导向"后，<b>两校的差距从 1.15 分缩小到 0.50 分</b>——这说明"想当老师"这件事确实会让两校更接近，因为出口几乎一样。但<b>沈师仍然领先，因为"上岸概率"这一项的差距太大了</b>：辽师 388 分、沈师 357 分，这不是靠"辽师更好就业"能补回来的。如果她自评有 390 分以上的实力，这个差距就抹平了，那时城市和平台才成为决定项。</p>
+    </div>
+  </section>
+
+  <!-- ================= 11 ================= -->
+  <section id="s-risk" data-toc="风险与自查清单">
+    <h2><span class="num">11</span>风险提示与自查清单</h2>
+
+    <h3>风险提示（务必看）</h3>
+    <ul>
+      <li><span class="tag t-bad">高风险</span> <b>沈师 2026 年的 29 人不可持续。</b>目录原本写 14 人，实际下达到 29 人是扩招；2027 年若回到 15–20 人，录取分大概率抬到 370–380，现在的"低门槛"会消失。<b>别按 357 分做规划。</b></li>
+      <li><span class="tag t-bad">高风险</span> <b>教师岗在收缩。</b>小学段尤其明显（南京 2026 年全市小学主科只招 2 人）。目标定在小学美术，三年后可能无岗可报；定在初中／高中更稳。</li>
+      <li><span class="tag t-warn">中风险</span> <b>辽师 2027 大纲可能再变。</b>2026 年刚做过科目对调与参考书扩增，2027 年 9 月新大纲若不看，可能背错书。<b>每年 9 月必须重查一次官网。</b></li>
+      <li><span class="tag t-warn">中风险</span> <b>沈师 2027 新增书法方向。</b>新方向头两年通常报考人数少、竞争轻，如果她有书法基础，这是一个"低分进好学校"的窗口——但同样可能因信息扩散而快速升温。</li>
+      <li><span class="tag t-warn">中风险</span> <b>若考虑 045113 学科教学（美术），先看英语单科线。</b>教育学 2026 年单科线 48 分，比艺术学的 38 分高出 10 分。艺术生英语卡在 40 出头很常见，这条线过不了，总分再高也没用。</li>
+      <li><span class="tag t-gray">提醒</span> <b>两校都不歧视本科出身</b>，复试按总成绩排序，双非／二本背景不影响。真正的变量是分数和画面。</li>
+      <li><span class="tag t-gray">提醒</span> <b>艺术类国家线 2026 反弹到 354</b>（2025 是 351，2024 是 362），说明这条线在 351–362 高位震荡，别指望降。</li>
+    </ul>
+
+    <h3>需要她自己去核对的 6 件事</h3>
+    <ol class="steps">
+      <li><b>辽师 2027 最终招生目录与考试大纲</b>研究生院 yjszs.lnnu.edu.cn（每年 9 月更新）；重点看 711／809 参考书是否又变、美术方向是否仍是 20 人。</li>
+      <li><b>沈师 2027 专业目录的拟招生人数</b>yjs.synu.edu.cn，目录 PDF 里的"拟招生人数"列；同时看 646／830 大纲是否有调整。</li>
+      <li><b>辽师 2026 年复试名单</b>（不是录取名单）——能看到进复试的最低分，用来判断当年真实门槛。</li>
+      <li><b>沈师 2027 年是否继续扩招</b>——关注每年 3 月发布的《分专业招生计划分配方案》，这才是真实计划数。</li>
+      <li><b>两校美术学院导师名单与画种</b>——直接决定读研三年跟谁画什么。辽师不细分画种但要提前联系导师；沈师按方向报考，报错方向没法改。</li>
+      <li><b>目标城市最近一年的教师招聘公告</b>——去"大连市教育局""沈阳市教育局"官网，翻去年 10–12 月的校招公告，看清"专业要求"那一栏有没有 1356。这一步比看任何排名都重要。</li>
+    </ol>
+
+    <h3>官方信息入口</h3>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:26%">用途</th><th style="width:74%">网址 / 查找路径</th></tr></thead>
+      <tbody>
+        <tr><td>辽师研究生招生</td><td>yjszs.lnnu.edu.cn　｜　辽师美术学院：art.lnnu.edu.cn（考试大纲、复试细则都在这里）</td></tr>
+        <tr><td>沈师研究生院</td><td>yjs.synu.edu.cn（招生章程、专业目录、复试录取工作方案、复试名单）</td></tr>
+        <tr><td>研招网专业目录</td><td>yz.chsi.com.cn（查当年拟招生人数的最终版）</td></tr>
+        <tr><td>教师招聘公告</td><td>大连市教育局／沈阳市教育局官网、"辽宁人事考试网"（事业单位联考）、各区政府网站；辽师与沈师的<b>就业信息网</b>是校招公告的第一落点</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- ================= 12 ================= -->
+  <section id="s-source" data-toc="数据来源与可信度">
+    <h2><span class="num">12</span>数据来源与可信度说明</h2>
+
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:30%">数据</th><th style="width:34%">来源</th><th style="width:36%">可信度</th></tr></thead>
+      <tbody>
+        <tr><td>辽师 2026 初试科目／参考书／计划数</td><td>辽师 2026 硕士招生专业目录（官方 docx，本地存档）</td><td><span class="tag t-ok">一手官方</span></td></tr>
+        <tr><td>辽师 2026 拟录取名单分数</td><td>辽师 2026 拟录取公示 PDF，逐条统计（n=20＋书法 3＋士兵 2）</td><td><span class="tag t-ok">一手官方</span></td></tr>
+        <tr><td>辽师复试办法（150 分制、美术馆现场）</td><td>辽师美术学院 2026 复试录取工作细则</td><td><span class="tag t-ok">一手官方</span></td></tr>
+        <tr><td>沈师 2026 科目／参考书／复试分值</td><td>沈师 2026 招生章程与专业目录 PDF、复试录取工作方案 PDF</td><td><span class="tag t-ok">一手官方</span></td></tr>
+        <tr><td>沈师 2026 进复试人数与分数</td><td>沈师 2026 一志愿复试名单 PDF，逐条统计（n=29）</td><td><span class="tag t-ok">一手官方</span></td></tr>
+        <tr><td>沈师 2026 下达计划 29 人</td><td>沈师 2026 分专业招生计划分配方案 PDF</td><td><span class="tag t-ok">一手官方</span></td></tr>
+        <tr><td>2026 国家线（艺术学 354／38·57；教育学 347／48·72）</td><td>教育部《2026 年全国硕士研究生招生考试考生进入复试的初试成绩基本要求》</td><td><span class="tag t-ok">一手官方</span></td></tr>
+        <tr><td>大连沙河口区初中美术岗专业目录含 1356</td><td>2026 年大连市沙河口区教育系统招聘应届毕业生公告（招 104 人，初中美术 3 人）</td><td><span class="tag t-ok">一手官方</span></td></tr>
+        <tr><td>旅顺口区自主招聘面向硕士、免笔试</td><td>大连市旅顺口区教育系统 2026 年第二批次自主招聘 44 人公告</td><td><span class="tag t-ok">一手官方</span></td></tr>
+        <tr><td>辽师 045113 两年制／3 人／809 中国美术史</td><td>辽师 2026 招生专业目录</td><td><span class="tag t-ok">一手官方</span></td></tr>
+        <tr><td>沈师 045113 归属教师教育学院／820 教育政策与法规</td><td>沈师 2026 招生章程 PDF；人数与学制另见第三方平台，存在口径差异</td><td><span class="tag t-warn">官方＋三方并存</span></td></tr>
+        <tr><td>小学缩编、音美岗 193:1、幼儿园教师减少</td><td>2026 年各地教招公开解读、南京市 2026 教师招聘公告、《中国统计年鉴 2025》引用</td><td><span class="tag t-warn">公开报道</span></td></tr>
+        <tr><td>两校就业率／行业分布／城市分布</td><td>两校毕业生就业质量报告（全校口径，非美院单列）</td><td><span class="tag t-warn">全校口径</span></td></tr>
+        <tr><td>2025 年及以前录取分</td><td>公开整理数据</td><td><span class="tag t-gray">三方参考</span></td></tr>
+        <tr><td>2029–2031 初中学位高峰推算</td><td>依据历年出生人口规模推算，非官方预测</td><td><span class="tag t-gray">推算</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p class="src">凡标注"未查到""需核对"的地方，本报告未做推测填充。院校政策每年变动，报考前请以官网最新公告为准。</p>
+  </section>
+
+  </main>
+</div>
+
+<footer>
+  报告基于两校 2026–2027 年官方招生文件、2026 年拟录取／复试名单原始数据，以及公开可查的第三方整理数据编写。<br>
+  标注"一手官方"的数据可逐条核验；标注"三方参考""推算"的数据建议以院校官网复核。政策每年变动，报考前请以最新公告为准。
+</footer>
+
+<button id="tocBtn" aria-label="打开目录">目录</button>
+<div id="tocMask"></div>
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- 1. 自动生成目录 ---------- */
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section[data-toc]'));
+  var toc = document.getElementById('toc');
+  var links = [];
+  secs.forEach(function(s){
+    var label = s.getAttribute('data-toc');
+    var h2 = s.querySelector('h2');
+    var numEl = h2 ? h2.querySelector('.num') : null;
+    var numAttr = s.getAttribute('data-num');
+    var num = (numAttr === null) ? (numEl ? numEl.textContent.trim() : '') : numAttr;
+    var title = h2 ? h2.textContent.replace(numEl ? numEl.textContent : '', '').trim() : label;
+
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = '#' + s.id;
+    a.innerHTML = (num ? '<span class="n">' + num + '</span>' : '') + label;
+    a.title = title;
+    li.appendChild(a);
+    toc.appendChild(li);
+    links.push({ a: a, el: s });
+  });
+
+  /* ---------- 2. 滚动高亮 + 进度条 ---------- */
+  var prog = document.getElementById('progress');
+  var toTop = document.getElementById('toTop');
+  var ticking = false;
+
+  function update(){
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    prog.style.width = (h > 0 ? (st / h) * 100 : 0) + '%';
+
+    if (st > 420) { toTop.classList.add('on'); } else { toTop.classList.remove('on'); }
+
+    var idx = 0;
+    for (var i = 0; i < links.length; i++){
+      if (links[i].el.getBoundingClientRect().top <= 140) { idx = i; }
+    }
+    links.forEach(function(o, i){
+      if (i === idx) { o.a.classList.add('on'); } else { o.a.classList.remove('on'); }
+    });
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if (!ticking){ ticking = true; window.requestAnimationFrame(update); }
+  }, { passive: true });
+  window.addEventListener('resize', update);
+
+  /* ---------- 3. 移动端目录抽屉 ---------- */
+  var wrap = document.getElementById('tocWrap');
+  var btn = document.getElementById('tocBtn');
+  var mask = document.getElementById('tocMask');
+  function closeDrawer(){ wrap.classList.remove('open'); mask.classList.remove('on'); }
+  btn.addEventListener('click', function(){ wrap.classList.add('open'); mask.classList.add('on'); });
+  mask.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeDrawer(); });
+  toc.addEventListener('click', function(e){
+    if (e.target.closest('a') && window.innerWidth <= 1040) { setTimeout(closeDrawer, 80); }
+  });
+
+  /* ---------- 4. 回到顶部 ---------- */
+  toTop.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* ---------- 5. 表格加横向滚动容器 ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll('main table'), function(t){
+    if (t.parentNode.classList && t.parentNode.classList.contains('table-wrap')) { return; }
+    var w = document.createElement('div');
+    w.className = 'table-wrap';
+    t.parentNode.insertBefore(w, t);
+    w.appendChild(t);
+  });
+
+  /* ---------- 6. 分数分布图 ---------- */
+  var A = [416,411,404,403,400,399,398,397,397,397,396,396,396,395,393,391,391,389,388,388];
+  var B = [423,418,413,397,393,386,385,385,381,381,379,379,376,375,374,373,373,372,370,369,369,369,368,368,367,366,365,359,357];
+  var MIN = 350, MAX = 430, L = 66, R = 700;
+  function x(v){ return L + (v - MIN) / (MAX - MIN) * (R - L); }
+
+  var svg = document.querySelector('.chart-box svg');
+  var NS = 'http://www.w3.org/2000/svg';
+
+  // 纵向网格 + 横轴刻度
+  var grid = document.getElementById('gridlines');
+  var ticks = document.getElementById('ticks');
+  for (var v = 350; v <= 430; v += 10){
+    if (v > 350){
+      var gl = document.createElementNS(NS, 'line');
+      gl.setAttribute('x1', x(v)); gl.setAttribute('x2', x(v));
+      gl.setAttribute('y1', 18); gl.setAttribute('y2', 176);
+      gl.setAttribute('stroke', '#f0f3f6');
+      grid.appendChild(gl);
+    }
+    var tk = document.createElementNS(NS, 'line');
+    tk.setAttribute('x1', x(v)); tk.setAttribute('x2', x(v));
+    tk.setAttribute('y1', 176); tk.setAttribute('y2', 181);
+    tk.setAttribute('stroke', '#c9cfd6');
+    ticks.appendChild(tk);
+
+    var tx = document.createElementNS(NS, 'text');
+    tx.setAttribute('x', x(v)); tx.setAttribute('y', 195);
+    tx.setAttribute('text-anchor', 'middle');
+    tx.setAttribute('class', 'ax');
+    tx.textContent = v;
+    ticks.appendChild(tx);
+  }
+
+  // 国家线
+  var nl = document.getElementById('natline');
+  nl.setAttribute('x1', x(354)); nl.setAttribute('x2', x(354));
+  var nlab = document.getElementById('natlabel');
+  nlab.setAttribute('x', x(354) + 5);
+  nlab.setAttribute('y', 12);
+
+  // 散点（同分纵向堆叠）
+  function plot(arr, nodeId, color, base){
+    var node = document.getElementById(nodeId);
+    var seen = {};
+    arr.forEach(function(val){
+      var k = String(val);
+      seen[k] = (seen[k] || 0) + 1;
+      var c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', x(val));
+      c.setAttribute('cy', base - (seen[k] - 1) * 6.6);
+      c.setAttribute('r', 4.3);
+      c.setAttribute('fill', color);
+      c.setAttribute('fill-opacity', '0.78');
+      c.setAttribute('stroke', '#fff');
+      c.setAttribute('stroke-width', '0.9');
+      var t = document.createElementNS(NS, 'title');
+      t.textContent = val + ' 分';
+      c.appendChild(t);
+      node.appendChild(c);
+    });
+  }
+  plot(A, 'dotsA', '#1a5fa8', 76);
+  plot(B, 'dotsB', '#a85a17', 152);
+
+  // 中位数标注
+  function median(arr){
+    var s = arr.slice().sort(function(a, b){ return a - b; });
+    var m = Math.floor(s.length / 2);
+    return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+  }
+  function marker(nodeId, val, base, color){
+    var node = document.getElementById(nodeId);
+    var ln = document.createElementNS(NS, 'line');
+    ln.setAttribute('x1', x(val)); ln.setAttribute('x2', x(val));
+    ln.setAttribute('y1', base - 24); ln.setAttribute('y2', base + 16);
+    ln.setAttribute('stroke', color);
+    ln.setAttribute('stroke-width', '1.2');
+    ln.setAttribute('stroke-dasharray', '3 3');
+    ln.setAttribute('opacity', '0.8');
+    node.appendChild(ln);
+  }
+  marker('dotsA', median(A), 76, '#1a5fa8');
+  marker('dotsB', median(B), 152, '#a85a17');
+
+  update();
+})();
+</script>
+</body>
+</html>
