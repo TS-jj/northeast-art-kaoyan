@@ -7,11 +7,12 @@
 <meta name="description" content="吉林师范、长春师范、天津师范、河北师范、河北大学、辽宁师范、沈阳大学七所学校 135600 美术与书法专硕的初试科目、录取分数、复试权重、学费与适合人群对比。">
 <style>
 :root{
-  --ink:#151a21; --body:#2b333d; --mute:#6c7885; --line:#e3e7ec; --line2:#eef1f4;
-  --bg:#f5f7f9; --card:#fff;
-  --c1:#1a5fa8; --c2:#a8541a; --c3:#17734a; --c4:#6b3d8f;
-  --c5:#a8384a; --c6:#1f6f7d; --c7:#8a6d1f;
-  --ok:#17734a; --warn:#a8541a; --bad:#a8384a;
+  --ink:#1e1a15; --body:#35302a; --mute:#7d7366; --line:#e6dfd1; --line2:#f1ebdf;
+  --bg:#f7f3ea; --card:#fffdf8;
+  --c1:#2c5f7d; --c2:#a2581f; --c3:#3f6b45; --c4:#6a4a86;
+  --c5:#9e3b47; --c6:#25707a; --c7:#8a6a20;
+  --acc:#8f4622; --seal:#b3382e;
+  --ok:#3f6b45; --warn:#a2581f; --bad:#9e3b47;
   --wide:940px;
 }
 *{box-sizing:border-box}
@@ -22,52 +23,62 @@ body{margin:0;background:var(--bg);color:var(--body);
 .wrap{max-width:var(--wide);margin:0 auto;padding:0 20px}
 
 /* ---------- hero ---------- */
-.hero{background:linear-gradient(168deg,#0f2c4d 0%,#173f68 46%,#1c4a76 100%);color:#fff;padding:38px 0 32px}
-.hero .kicker{font-size:12.5px;letter-spacing:.16em;color:#9fc0de;margin:0 0 14px;font-weight:600}
-.hero h1{margin:0 0 6px;font-size:31px;line-height:1.35;font-weight:700;letter-spacing:-.4px}
-.hero .sub{margin:0 0 20px;font-size:15px;font-weight:400;color:#c2d6e8;line-height:1.8}
-.hero .lede{font-size:14.4px;color:#dce8f3;max-width:790px;margin:14px 0 0;line-height:1.85}
-.hero .lede b{color:#fff}
+.hero{position:relative;overflow:hidden;color:#fdf9f1;padding:42px 0 34px;
+  background:
+    radial-gradient(600px 280px at 88% -12%,rgba(198,148,74,.36),transparent 66%),
+    radial-gradient(500px 270px at 0% 116%,rgba(146,62,58,.22),transparent 72%),
+    linear-gradient(156deg,#18231d 0%,#21302a 50%,#29382e 100%)}
+.hero .wrap{position:relative;z-index:1}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;
+  background:linear-gradient(90deg,#9e3b47 0 14.28%,#25707a 0 28.56%,#2c5f7d 0 42.84%,#a2581f 0 57.12%,#3f6b45 0 71.4%,#6a4a86 0 85.68%,#8a6a20 0 100%)}
+.hero .kicker{font-size:12.5px;letter-spacing:.16em;color:#cb9a55;margin:0 0 14px;font-weight:600}
+.hero h1{margin:0 0 6px;font-size:31px;line-height:1.35;font-weight:700;letter-spacing:-.4px;color:#fdf9f1}
+.hero .sub{margin:0 0 20px;font-size:15px;font-weight:400;color:#c6b7a2;line-height:1.8}
+.hero .lede{font-size:14.4px;color:#e9dfcd;max-width:790px;margin:14px 0 0;line-height:1.85}
+.hero .lede b{color:#fff8ec}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
-.chips a{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;
-  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#eaf3fb;
+.chips a{display:inline-flex;align-items:center;gap:7px;padding:6px 13px;border-radius:999px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:#f6ecde;
   font-size:13px;text-decoration:none;transition:.16s}
-.chips a:hover{background:rgba(255,255,255,.2)}
-.chips i{width:7px;height:7px;border-radius:50%;display:block}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.16);
-  margin:24px 0 0;border-radius:10px;overflow:hidden}
-.stats div{background:#1b4470;padding:15px 16px}
-.stats b{display:block;font-size:21px;font-weight:700;letter-spacing:-.3px;line-height:1.3}
-.stats em{display:block;font-style:normal;font-size:12px;color:#a9c6de;margin-top:5px;line-height:1.6}
+.chips a:hover{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.32)}
+.chips i{width:8px;height:8px;border-radius:50%;display:block;box-shadow:0 0 0 2px rgba(255,255,255,.14)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0 0}
+.stats div{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+  border-top:2px solid var(--sc,#cb9a55);border-radius:10px;padding:14px 16px}
+.stats b{display:block;font-size:21px;font-weight:700;letter-spacing:-.3px;line-height:1.3;color:var(--sc,#f3e5cf)}
+.stats em{display:block;font-style:normal;font-size:11.9px;color:#b6a68f;margin-top:5px;line-height:1.6}
 
 /* ---------- layout ---------- */
 .shell{display:grid;grid-template-columns:212px minmax(0,1fr);gap:36px;max-width:1200px;margin:0 auto;padding:0 20px}
 #toc{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:26px 0 30px;font-size:13px}
-#toc .part{margin:0 0 4px;padding:12px 0 2px;font-size:11.5px;letter-spacing:.09em;color:#93a0ad;font-weight:700}
+#toc .part{margin:0 0 4px;padding:12px 0 2px;font-size:11.5px;letter-spacing:.09em;color:#a1907a;font-weight:700}
 #toc .part:first-child{padding-top:0}
 #toc ul{list-style:none;margin:0;padding:0}
-#toc li a{display:block;padding:5px 9px 5px 12px;color:#48535f;text-decoration:none;border-left:2px solid var(--line2);
+#toc li a{display:block;padding:5px 9px 5px 12px;color:#4a443a;text-decoration:none;border-left:2px solid var(--line2);
   border-radius:0 5px 5px 0;line-height:1.55;transition:.14s}
-#toc li a:hover{color:var(--c1);background:#eef3f8}
-#toc li a.on{color:var(--c1);font-weight:600;border-left-color:var(--c1);background:#e9f1f9}
+#toc li a:hover{color:var(--acc);background:#f6eee1}
+#toc li a.on{color:#241f19;font-weight:600;border-left-color:var(--acc);background:#f5ead9}
 main{min-width:0;padding:6px 0 70px}
 
 /* ---------- section ---------- */
 section{margin:0 0 52px;scroll-margin-top:10px}
 .sec-h{display:flex;align-items:baseline;gap:12px;margin:0 0 6px;padding-top:20px}
-.sec-h .num{font-size:12px;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--c1);
+.sec-h .num{font-size:12px;font-weight:700;letter-spacing:.06em;color:#fdf6e8;background:#2a231c;
   padding:3px 8px;border-radius:5px;flex:none;position:relative;top:-2px}
 .sec-h h2{margin:0;font-size:22.5px;line-height:1.4;font-weight:700;color:var(--ink);letter-spacing:-.3px}
-.lede{margin:8px 0 22px;font-size:15px;color:#4c5865;line-height:1.9}
+.lede{margin:8px 0 22px;font-size:15px;color:#4d463b;line-height:1.9}
 h3{font-size:16.5px;margin:34px 0 12px;color:var(--ink);font-weight:700;letter-spacing:-.1px}
+h3::before{content:"";display:inline-block;width:7px;height:7px;margin:0 9px 2px 0;background:var(--acc);
+  transform:rotate(45deg);vertical-align:1px}
+.dos-h h3::before,.foot h3::before{content:none}
 h3:first-of-type{margin-top:20px}
 h4{font-size:13.6px;margin:0 0 7px;color:var(--ink);font-weight:700}
 p{margin:0 0 13px}
-a{color:var(--c1)}
+a{color:var(--acc)}
 b,strong{color:var(--ink);font-weight:600}
 ul,ol{margin:0 0 14px;padding-left:20px}
 li{margin:3px 0}
-li::marker{color:#9aa6b2}
+li::marker{color:#a99b86}
 .src{font-size:12.2px;color:var(--mute);line-height:1.75;margin:9px 0 0}
 .note{font-size:12.4px;color:var(--mute);line-height:1.7}
 
@@ -85,43 +96,43 @@ li::marker{color:#9aa6b2}
 .card.gold{border-top:3px solid var(--c7)}
 
 /* ---------- table ---------- */
-.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:11px;background:#fff;margin:0 0 12px}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:11px;background:var(--card);margin:0 0 12px}
 table{width:100%;border-collapse:collapse;font-size:13.4px;line-height:1.7}
 th,td{padding:9px 11px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line2)}
-thead th{background:#f0f3f6;color:#3f4a56;font-weight:700;font-size:12.6px;white-space:nowrap;
+thead th{background:#f2e9d7;color:#42392c;font-weight:700;font-size:12.6px;white-space:nowrap;
   position:sticky;top:0;box-shadow:inset 0 -1px 0 var(--line)}
 tbody tr:last-child td{border-bottom:none}
-tbody tr:hover td{background:#fafbfc}
+tbody tr:hover td{background:#fbf7ec}
 td.num-cell{text-align:center;font-variant-numeric:tabular-nums;white-space:nowrap}
 td .tag{margin-right:5px}
 td .tag:last-child{margin-right:0}
 th.center,td.center{text-align:center}
-tr.sum td{background:#f7f9fb;font-weight:700}
+tr.sum td{background:#f7f0e0;font-weight:700}
 .c1{color:var(--c1)}.c2{color:var(--c2)}.c3{color:var(--c3)}.c4{color:var(--c4)}
 .c5{color:var(--c5)}.c6{color:var(--c6)}.c7{color:var(--c7)}
 table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line-height:1.6;margin-top:2px}
 
 /* ---------- tags ---------- */
 .tag{display:inline-block;padding:1px 7px;border-radius:4px;font-size:11.5px;font-weight:600;white-space:nowrap;line-height:1.7}
-.t-ok{background:#e6f2ec;color:#12603d}
-.t-warn{background:#fbf0e3;color:#8c4413}
-.t-bad{background:#fbe9ec;color:#8c2a3a}
-.t-info{background:#e8f0f8;color:#174f8c}
-.t-gray{background:#eef1f4;color:#5a6673}
+.t-ok{background:#e9f1e3;color:#38602f}
+.t-warn{background:#f9ecda;color:#8d4a13}
+.t-bad{background:#f8e6e2;color:#8f2f24}
+.t-info{background:#e7eef1;color:#245a74}
+.t-gray{background:#f0ebdf;color:#5f5646}
 .badge{display:inline-block;padding:1px 8px;border-radius:4px;font-size:11.5px;font-weight:600}
 .callout{border-radius:10px;padding:14px 16px;margin:16px 0;font-size:14.2px;line-height:1.85;
-  background:#f7f9fb;border:1px solid var(--line);border-left:3px solid #b9c4cf}
+  background:#f9f5ec;border:1px solid var(--line);border-left:3px solid #c8b79c}
 .callout p:last-child{margin-bottom:0}
-.callout.warn{background:#fdf6ee;border-color:#f0e0cc;border-left-color:#c97b2e}
-.callout.ok{background:#eff7f2;border-color:#d5e8dc;border-left-color:#2f8a5c}
-.callout.bad{background:#fdf1f3;border-color:#f0d8dd;border-left-color:#b8455a}
+.callout.warn{background:#fdf3e3;border-color:#f0ddc4;border-left-color:#c0742a}
+.callout.ok{background:#f0f5e8;border-color:#d9e4c9;border-left-color:#4a7d43}
+.callout.bad{background:#fceeea;border-color:#f0d6cd;border-left-color:#a8463a}
 .callout .tag-h{display:inline-block;font-weight:700;color:var(--ink);margin-right:6px}
 
 /* ---------- school grid (01) ---------- */
 .sgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
-.sch{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0;overflow:hidden;
+.sch{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0;overflow:hidden;
   display:flex;flex-direction:column;transition:.16s}
-.sch:hover{box-shadow:0 6px 20px rgba(20,40,60,.07);transform:translateY(-1px)}
+.sch:hover{box-shadow:0 7px 22px rgba(74,52,24,.10);transform:translateY(-1px)}
 .sch-h{display:flex;align-items:center;gap:9px;padding:12px 15px 10px;border-bottom:1px solid var(--line2)}
 .sch-h i{width:8px;height:8px;border-radius:50%;flex:none}
 .sch-h b{font-size:15px;color:var(--ink);letter-spacing:-.1px}
@@ -129,23 +140,23 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 .sch-b{padding:12px 15px 13px;flex:1;display:flex;flex-direction:column;gap:0}
 .sch-b dl{margin:0 0 10px;display:grid;grid-template-columns:52px 1fr;gap:2px 8px;font-size:12.9px;line-height:1.7}
 .sch-b dt{color:var(--mute);font-size:12.2px}
-.sch-b dd{margin:0;color:#33404d}
-.sch-b .one{margin:auto 0 0;padding-top:9px;border-top:1px dashed var(--line);font-size:12.9px;line-height:1.75;color:#3c4753}
+.sch-b dd{margin:0;color:#3b352c}
+.sch-b .one{margin:auto 0 0;padding-top:9px;border-top:1px dashed var(--line);font-size:12.9px;line-height:1.75;color:#443d33}
 .sch-b .one b{color:var(--ink)}
 .score-pill{display:inline-block;font-weight:700;font-variant-numeric:tabular-nums}
 
 /* ---------- chart ---------- */
-.chart-box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 16px 12px;overflow-x:auto}
+.chart-box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 16px 12px;overflow-x:auto}
 .chart-box svg{display:block;width:100%;min-width:560px;height:auto}
-.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.2px;color:#4d5865;margin:0 0 10px;padding:0 2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.2px;color:#4e463a;margin:0 0 10px;padding:0 2px}
 .legend span{display:inline-flex;align-items:center;white-space:nowrap}
 .legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;flex:none}
-.ax{font-size:11px;fill:#7d8895}
-.tick{stroke:#e9edf1;stroke-width:1}
+.ax{font-size:11px;fill:#877a66}
+.tick{stroke:#ece4d5;stroke-width:1}
 
 /* ---------- dossier ---------- */
-.dos{background:#fff;border:1px solid var(--line);border-radius:13px;margin:0 0 16px;overflow:hidden}
-.dos-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid var(--line2);background:#fafbfc}
+.dos{background:var(--card);border:1px solid var(--line);border-radius:13px;margin:0 0 16px;overflow:hidden}
+.dos-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid var(--line2);background:#fbf7ee}
 .dos-h h3{margin:0;font-size:17px;letter-spacing:-.2px}
 .dos-h .meta{font-size:12.2px;color:var(--mute);margin-left:auto}
 .dos-b{padding:16px 18px 18px}
@@ -153,36 +164,36 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 .dos-b ul{margin:0;padding-left:17px;font-size:13.6px;line-height:1.8}
 .dos-b li{margin:4px 0}
 .dos-b p{font-size:13.8px}
-.pin{font-size:13.8px;line-height:1.85;margin:0 0 14px;padding:10px 13px;border-radius:8px;background:#f6f8fa;border-left:3px solid #ccd5de}
+.pin{font-size:13.8px;line-height:1.85;margin:0 0 14px;padding:10px 13px;border-radius:8px;background:#f9f5ea;border-left:3px solid #c3b096}
 .pin b{color:var(--ink)}
 
 /* ---------- steps ---------- */
 .steps{counter-reset:s;margin:0;padding:0;list-style:none}
 .steps li{counter-increment:s;position:relative;padding:0 0 0 34px;margin:0 0 14px;font-size:14.4px;line-height:1.85}
 .steps li::before{content:counter(s);position:absolute;left:0;top:2px;width:22px;height:22px;border-radius:50%;
-  background:#e9f1f9;color:var(--c1);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  background:#f4e7d4;color:#8f4622;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
 
 /* ---------- signature ---------- */
 .sign{margin:40px 0 0;padding:22px 0 0;border-top:1px solid var(--line);text-align:right}
-.sign p{margin:0;font-size:14.6px;color:#4b5663;line-height:2}
-.sign .who{margin-top:4px;font-size:14.6px;color:#3a4551;letter-spacing:.04em}
-.sign .seal{display:inline-block;margin-left:7px;width:16px;height:16px;border-radius:3px;background:#b8353f;
+.sign p{margin:0;font-size:14.6px;color:#4b4238;line-height:2}
+.sign .who{margin-top:4px;font-size:14.6px;color:#39312a;letter-spacing:.04em}
+.sign .seal{display:inline-block;margin-left:7px;width:16px;height:16px;border-radius:3px;background:var(--seal);
   color:#fff;font-size:9px;line-height:16px;text-align:center;vertical-align:-2px;letter-spacing:0}
 
 /* ---------- mobile ---------- */
 #tocBtn{display:none}
 #mask{display:none}
-.swipe{margin:-2px 0 12px;font-size:11.6px;color:#9aa6b2;text-align:center;letter-spacing:.02em}
+.swipe{margin:-2px 0 12px;font-size:11.6px;color:#a4977f;text-align:center;letter-spacing:.02em}
 @media (max-width:1040px){
   .shell{grid-template-columns:1fr;gap:0;padding:0 16px;max-width:820px}
-  #toc{position:fixed;left:0;top:0;height:100vh;height:100dvh;width:268px;background:#fff;z-index:60;
+  #toc{position:fixed;left:0;top:0;height:100vh;height:100dvh;width:268px;background:#fffdf8;z-index:60;
     transform:translateX(-100%);transition:transform .22s ease;box-shadow:2px 0 20px rgba(10,25,40,.14);
     padding:18px 14px 28px;max-height:none;overflow-y:auto;overscroll-behavior:contain}
   body.toc-open{overflow:hidden}
   body.toc-open #toc{transform:none}
   #tocBtn{display:flex;align-items:center;gap:5px;position:fixed;right:14px;bottom:18px;z-index:62;
-    background:#163f66;color:#fff;border:none;border-radius:999px;padding:10px 15px;font-size:13px;
-    font-family:inherit;box-shadow:0 4px 16px rgba(12,30,50,.28);cursor:pointer}
+    background:#2a231c;color:#fdf6e8;border:none;border-radius:999px;padding:10px 15px;font-size:13px;
+    font-family:inherit;box-shadow:0 4px 16px rgba(40,28,14,.30);cursor:pointer}
   #mask{display:none;position:fixed;inset:0;background:rgba(12,24,36,.45);z-index:59}
   body.toc-open #mask{display:block}
   main{padding-bottom:80px}
@@ -235,19 +246,19 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
     <p class="sub">吉林师范 · 长春师范 · 天津师范 · 河北师范 · 河北大学 · 辽宁师范 · 沈阳大学</p>
     <p class="lede">写给绥化学院 美术学（纯艺方向）的你：同样是 135600，初试专业课从「两张史论卷」到「写 2000 字创作方案」，从「画素描」到「用黑色签字笔默写构图」，<b>差别大到不能算同一场考试</b>。这份报告只做一件事——把七所学校放在同一张桌子上，让你看清每一个选择的真实代价。</p>
     <div class="chips">
-      <a href="#d-jlnu"><i style="background:#a8384a"></i>吉林师范</a>
-      <a href="#d-ccsf"><i style="background:#1f6f7d"></i>长春师范</a>
-      <a href="#d-tjnu"><i style="background:#1a5fa8"></i>天津师范</a>
-      <a href="#d-hebtu"><i style="background:#a8541a"></i>河北师范</a>
-      <a href="#d-hbu"><i style="background:#17734a"></i>河北大学</a>
-      <a href="#d-lnnu"><i style="background:#6b3d8f"></i>辽宁师范</a>
-      <a href="#d-syu"><i style="background:#8a6d1f"></i>沈阳大学</a>
+      <a href="#d-jlnu" style="background:rgba(158,59,71,.22);border-color:rgba(158,59,71,.55)"><i style="background:#9e3b47"></i>吉林师范</a>
+      <a href="#d-ccsf" style="background:rgba(37,112,122,.24);border-color:rgba(37,112,122,.55)"><i style="background:#25707a"></i>长春师范</a>
+      <a href="#d-tjnu" style="background:rgba(44,95,125,.28);border-color:rgba(44,95,125,.6)"><i style="background:#2c5f7d"></i>天津师范</a>
+      <a href="#d-hebtu" style="background:rgba(162,88,31,.24);border-color:rgba(162,88,31,.55)"><i style="background:#a2581f"></i>河北师范</a>
+      <a href="#d-hbu" style="background:rgba(63,107,69,.24);border-color:rgba(63,107,69,.55)"><i style="background:#3f6b45"></i>河北大学</a>
+      <a href="#d-lnnu" style="background:rgba(106,74,134,.26);border-color:rgba(106,74,134,.55)"><i style="background:#6a4a86"></i>辽宁师范</a>
+      <a href="#d-syu" style="background:rgba(138,106,32,.26);border-color:rgba(138,106,32,.55)"><i style="background:#8a6a20"></i>沈阳大学</a>
     </div>
     <div class="stats">
-      <div><b>34 分</b><em>七校 2026 最低录取分最大差距（354–388）</em></div>
-      <div><b>3.33 分</b><em>天津师范复试 1 分抵初试 3.33 分，七校最重</em></div>
-      <div><b>2000 字</b><em>吉林师范创作方案的字数要求，写作弱的最怕</em></div>
-      <div><b>7000 元</b><em>河北师范、河北大学学费，只有天师的一半</em></div>
+      <div style="--sc:#d4704a"><b>34 分</b><em>七校 2026 最低录取分最大差距（354–388）</em></div>
+      <div style="--sc:#7fa9c9"><b>3.33 分</b><em>天津师范复试 1 分抵初试 3.33 分，七校最重</em></div>
+      <div style="--sc:#7fb492"><b>2000 字</b><em>吉林师范创作方案的字数要求，写作弱的最怕</em></div>
+      <div style="--sc:#d3a95c"><b>7000 元</b><em>河北师范、河北大学学费，只有天师的一半</em></div>
     </div>
   </div>
 </header>
@@ -288,8 +299,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 
   <div class="sgrid">
 
-    <div class="sch">
-      <div class="sch-h"><i style="background:#a8384a"></i><b>吉林师范大学</b><span>四平 · 10203</span></div>
+    <div class="sch" style="border-top:3px solid #9e3b47">
+      <div class="sch-h"><i style="background:#9e3b47"></i><b>吉林师范大学</b><span>四平 · 10203</span></div>
       <div class="sch-b">
         <dl>
           <dt>专业一</dt><dd>622 中外美术史（马工程《中国美术史》＋央美《外国美术简史》）</dd>
@@ -303,8 +314,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
       </div>
     </div>
 
-    <div class="sch">
-      <div class="sch-h"><i style="background:#1f6f7d"></i><b>长春师范大学</b><span>长春 · 10205</span></div>
+    <div class="sch" style="border-top:3px solid #25707a">
+      <div class="sch-h"><i style="background:#25707a"></i><b>长春师范大学</b><span>长春 · 10205</span></div>
       <div class="sch-b">
         <dl>
           <dt>专业一</dt><dd>336 艺术基础（彭吉象《艺术学概论》第六版）</dd>
@@ -318,8 +329,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
       </div>
     </div>
 
-    <div class="sch">
-      <div class="sch-h"><i style="background:#1a5fa8"></i><b>天津师范大学</b><span>天津 · 10065</span></div>
+    <div class="sch" style="border-top:3px solid #2c5f7d">
+      <div class="sch-h"><i style="background:#2c5f7d"></i><b>天津师范大学</b><span>天津 · 10065</span></div>
       <div class="sch-b">
         <dl>
           <dt>专业一</dt><dd>676 中外美术史（6 本参考书，含画论、美学）</dd>
@@ -333,8 +344,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
       </div>
     </div>
 
-    <div class="sch">
-      <div class="sch-h"><i style="background:#a8541a"></i><b>河北师范大学</b><span>石家庄 · 10094</span></div>
+    <div class="sch" style="border-top:3px solid #a2581f">
+      <div class="sch-h"><i style="background:#a2581f"></i><b>河北师范大学</b><span>石家庄 · 10094</span></div>
       <div class="sch-b">
         <dl>
           <dt>专业一</dt><dd>720 美术专业理论（艺术学概论＋中外美术史）</dd>
@@ -348,8 +359,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
       </div>
     </div>
 
-    <div class="sch">
-      <div class="sch-h"><i style="background:#17734a"></i><b>河北大学</b><span>保定 · 10075</span></div>
+    <div class="sch" style="border-top:3px solid #3f6b45">
+      <div class="sch-h"><i style="background:#3f6b45"></i><b>河北大学</b><span>保定 · 10075</span></div>
       <div class="sch-b">
         <dl>
           <dt>专业一</dt><dd>336 艺术基础（彭吉象《艺术学概论》第六版）</dd>
@@ -363,8 +374,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
       </div>
     </div>
 
-    <div class="sch">
-      <div class="sch-h"><i style="background:#6b3d8f"></i><b>辽宁师范大学</b><span>大连 · 10165</span></div>
+    <div class="sch" style="border-top:3px solid #6a4a86">
+      <div class="sch-h"><i style="background:#6a4a86"></i><b>辽宁师范大学</b><span>大连 · 10165</span></div>
       <div class="sch-b">
         <dl>
           <dt>专业一</dt><dd>711 外国美术史（含名作手绘图解）</dd>
@@ -378,8 +389,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
       </div>
     </div>
 
-    <div class="sch" style="grid-column:1/-1">
-      <div class="sch-h"><i style="background:#8a6d1f"></i><b>沈阳大学</b><span>沈阳 · 11035</span></div>
+    <div class="sch" style="grid-column:1/-1;border-top:3px solid #8a6a20">
+      <div class="sch-h"><i style="background:#8a6a20"></i><b>沈阳大学</b><span>沈阳 · 11035</span></div>
       <div class="sch-b">
         <div class="grid2" style="gap:14px">
           <dl style="margin:0">
@@ -483,24 +494,24 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 
   <div class="chart-box">
     <div class="legend">
-      <span><i style="background:#a8384a"></i>吉林师范：未公布</span>
-      <span><i style="background:#1f6f7d"></i>长春师范：绘画 366 / 书法 387</span>
-      <span><i style="background:#1a5fa8"></i>天津师范：43 人，354–436</span>
-      <span><i style="background:#a8541a"></i>河北师范：374–400</span>
-      <span><i style="background:#17734a"></i>河北大学：未公布</span>
-      <span><i style="background:#6b3d8f"></i>辽宁师范：20 人，388–416</span>
-      <span><i style="background:#8a6d1f"></i>沈阳大学：13 人，360–441</span>
+      <span><i style="background:#9e3b47"></i>吉林师范：未公布</span>
+      <span><i style="background:#25707a"></i>长春师范：绘画 366 / 书法 387</span>
+      <span><i style="background:#2c5f7d"></i>天津师范：43 人，354–436</span>
+      <span><i style="background:#a2581f"></i>河北师范：374–400</span>
+      <span><i style="background:#3f6b45"></i>河北大学：未公布</span>
+      <span><i style="background:#6a4a86"></i>辽宁师范：20 人，388–416</span>
+      <span><i style="background:#8a6a20"></i>沈阳大学：13 人，360–441</span>
     </div>
     <svg viewBox="0 0 700 330" role="img" aria-label="七校2026年一志愿录取分数区间图">
       <defs>
         <marker id="ar" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
-          <path d="M0,0 L6,3 L0,6 z" fill="#8d99a6"/>
+          <path d="M0,0 L6,3 L0,6 z" fill="#8f8272"/>
         </marker>
       </defs>
 
       <!-- gridlines: 340 - 450 -->
       <g class="tick">
-        <line x1="86" y1="34" x2="86" y2="286" stroke="#dfe4ea"/>
+        <line x1="86" y1="34" x2="86" y2="286" stroke="#e6ddcb"/>
         <line x1="169" y1="34" x2="169" y2="286"/>
         <line x1="252" y1="34" x2="252" y2="286"/>
         <line x1="334" y1="34" x2="334" y2="286"/>
@@ -525,60 +536,60 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
       <!-- rows -->
       <!-- 吉师 未公开 -->
       <g>
-        <text x="80" y="56" class="ax" text-anchor="end" font-weight="700" fill="#a8384a">吉师</text>
-        <line x1="88" y1="52" x2="140" y2="52" stroke="#e6e9ed" stroke-width="2" stroke-dasharray="2 3"/>
+        <text x="80" y="56" class="ax" text-anchor="end" font-weight="700" fill="#9e3b47">吉师</text>
+        <line x1="88" y1="52" x2="140" y2="52" stroke="#eee7d8" stroke-width="2" stroke-dasharray="2 3"/>
         <text x="148" y="56" class="ax">未公布逐人分数（2026 年发布过调剂细则）</text>
       </g>
       <!-- 长师 366-415 -->
       <g>
-        <text x="80" y="95" class="ax" text-anchor="end" font-weight="700" fill="#1f6f7d">长师</text>
-        <line x1="231" y1="91" x2="503" y2="91" stroke="#1f6f7d" stroke-width="7" stroke-linecap="round" opacity=".28"/>
-        <circle cx="231" cy="91" r="4.6" fill="#fff" stroke="#1f6f7d" stroke-width="2.2"/>
-        <circle cx="503" cy="91" r="4.6" fill="#fff" stroke="#1f6f7d" stroke-width="2.2"/>
-        <text x="231" y="76" class="ax" text-anchor="middle" fill="#1f6f7d" font-weight="700">366</text>
-        <text x="503" y="76" class="ax" text-anchor="middle" fill="#1f6f7d">415</text>
+        <text x="80" y="95" class="ax" text-anchor="end" font-weight="700" fill="#25707a">长师</text>
+        <line x1="231" y1="91" x2="503" y2="91" stroke="#25707a" stroke-width="7" stroke-linecap="round" opacity=".28"/>
+        <circle cx="231" cy="91" r="4.6" fill="#fff" stroke="#25707a" stroke-width="2.2"/>
+        <circle cx="503" cy="91" r="4.6" fill="#fff" stroke="#25707a" stroke-width="2.2"/>
+        <text x="231" y="76" class="ax" text-anchor="middle" fill="#25707a" font-weight="700">366</text>
+        <text x="503" y="76" class="ax" text-anchor="middle" fill="#25707a">415</text>
       </g>
       <!-- 天师 354-436 -->
       <g>
-        <text x="80" y="134" class="ax" text-anchor="end" font-weight="700" fill="#1a5fa8">天师</text>
-        <line x1="164" y1="130" x2="604" y2="130" stroke="#1a5fa8" stroke-width="7" stroke-linecap="round" opacity=".28"/>
-        <circle cx="164" cy="130" r="4.6" fill="#fff" stroke="#1a5fa8" stroke-width="2.2"/>
-        <circle cx="604" cy="130" r="4.6" fill="#fff" stroke="#1a5fa8" stroke-width="2.2"/>
-        <text x="172" y="116" class="ax" text-anchor="start" fill="#1a5fa8" font-weight="700">354</text>
-        <text x="604" y="115" class="ax" text-anchor="middle" fill="#1a5fa8">436</text>
+        <text x="80" y="134" class="ax" text-anchor="end" font-weight="700" fill="#2c5f7d">天师</text>
+        <line x1="164" y1="130" x2="604" y2="130" stroke="#2c5f7d" stroke-width="7" stroke-linecap="round" opacity=".28"/>
+        <circle cx="164" cy="130" r="4.6" fill="#fff" stroke="#2c5f7d" stroke-width="2.2"/>
+        <circle cx="604" cy="130" r="4.6" fill="#fff" stroke="#2c5f7d" stroke-width="2.2"/>
+        <text x="172" y="116" class="ax" text-anchor="start" fill="#2c5f7d" font-weight="700">354</text>
+        <text x="604" y="115" class="ax" text-anchor="middle" fill="#2c5f7d">436</text>
       </g>
       <!-- 河师 374-400 -->
       <g>
-        <text x="80" y="173" class="ax" text-anchor="end" font-weight="700" fill="#a8541a">河师</text>
-        <line x1="270" y1="169" x2="417" y2="169" stroke="#a8541a" stroke-width="7" stroke-linecap="round" opacity=".28"/>
-        <circle cx="270" cy="169" r="4.6" fill="#fff" stroke="#a8541a" stroke-width="2.2"/>
-        <circle cx="417" cy="169" r="4.6" fill="#fff" stroke="#a8541a" stroke-width="2.2"/>
-        <text x="270" y="154" class="ax" text-anchor="middle" fill="#a8541a" font-weight="700">374</text>
-        <text x="417" y="154" class="ax" text-anchor="middle" fill="#a8541a">400</text>
+        <text x="80" y="173" class="ax" text-anchor="end" font-weight="700" fill="#a2581f">河师</text>
+        <line x1="270" y1="169" x2="417" y2="169" stroke="#a2581f" stroke-width="7" stroke-linecap="round" opacity=".28"/>
+        <circle cx="270" cy="169" r="4.6" fill="#fff" stroke="#a2581f" stroke-width="2.2"/>
+        <circle cx="417" cy="169" r="4.6" fill="#fff" stroke="#a2581f" stroke-width="2.2"/>
+        <text x="270" y="154" class="ax" text-anchor="middle" fill="#a2581f" font-weight="700">374</text>
+        <text x="417" y="154" class="ax" text-anchor="middle" fill="#a2581f">400</text>
       </g>
       <!-- 河大 未公开 -->
       <g>
-        <text x="80" y="212" class="ax" text-anchor="end" font-weight="700" fill="#17734a">河大</text>
-        <line x1="88" y1="208" x2="140" y2="208" stroke="#e6e9ed" stroke-width="2" stroke-dasharray="2 3"/>
+        <text x="80" y="212" class="ax" text-anchor="end" font-weight="700" fill="#3f6b45">河大</text>
+        <line x1="88" y1="208" x2="140" y2="208" stroke="#eee7d8" stroke-width="2" stroke-dasharray="2 3"/>
         <text x="148" y="212" class="ax">未公布逐人分数（一志愿 20 人＋调剂两批）</text>
       </g>
       <!-- 辽师 388-416 -->
       <g>
-        <text x="80" y="251" class="ax" text-anchor="end" font-weight="700" fill="#6b3d8f">辽师</text>
-        <line x1="347" y1="247" x2="509" y2="247" stroke="#6b3d8f" stroke-width="7" stroke-linecap="round" opacity=".28"/>
-        <circle cx="347" cy="247" r="4.6" fill="#fff" stroke="#6b3d8f" stroke-width="2.2"/>
-        <circle cx="509" cy="247" r="4.6" fill="#fff" stroke="#6b3d8f" stroke-width="2.2"/>
-        <text x="347" y="232" class="ax" text-anchor="middle" fill="#6b3d8f" font-weight="700">388</text>
-        <text x="509" y="232" class="ax" text-anchor="middle" fill="#6b3d8f">416</text>
+        <text x="80" y="251" class="ax" text-anchor="end" font-weight="700" fill="#6a4a86">辽师</text>
+        <line x1="347" y1="247" x2="509" y2="247" stroke="#6a4a86" stroke-width="7" stroke-linecap="round" opacity=".28"/>
+        <circle cx="347" cy="247" r="4.6" fill="#fff" stroke="#6a4a86" stroke-width="2.2"/>
+        <circle cx="509" cy="247" r="4.6" fill="#fff" stroke="#6a4a86" stroke-width="2.2"/>
+        <text x="347" y="232" class="ax" text-anchor="middle" fill="#6a4a86" font-weight="700">388</text>
+        <text x="509" y="232" class="ax" text-anchor="middle" fill="#6a4a86">416</text>
       </g>
       <!-- 沈大 360-441 -->
       <g>
-        <text x="80" y="278" class="ax" text-anchor="end" font-weight="700" fill="#8a6d1f">沈大</text>
-        <line x1="195" y1="274" x2="625" y2="274" stroke="#8a6d1f" stroke-width="7" stroke-linecap="round" opacity=".28"/>
-        <circle cx="195" cy="274" r="4.6" fill="#fff" stroke="#8a6d1f" stroke-width="2.2"/>
-        <circle cx="625" cy="274" r="4.6" fill="#fff" stroke="#8a6d1f" stroke-width="2.2"/>
-        <text x="195" y="259" class="ax" text-anchor="middle" fill="#8a6d1f" font-weight="700">360</text>
-        <text x="625" y="259" class="ax" text-anchor="middle" fill="#8a6d1f">441</text>
+        <text x="80" y="278" class="ax" text-anchor="end" font-weight="700" fill="#8a6a20">沈大</text>
+        <line x1="195" y1="274" x2="625" y2="274" stroke="#8a6a20" stroke-width="7" stroke-linecap="round" opacity=".28"/>
+        <circle cx="195" cy="274" r="4.6" fill="#fff" stroke="#8a6a20" stroke-width="2.2"/>
+        <circle cx="625" cy="274" r="4.6" fill="#fff" stroke="#8a6a20" stroke-width="2.2"/>
+        <text x="195" y="259" class="ax" text-anchor="middle" fill="#8a6a20" font-weight="700">360</text>
+        <text x="625" y="259" class="ax" text-anchor="middle" fill="#8a6a20">441</text>
       </g>
     </svg>
   </div>
@@ -762,8 +773,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 
   <!-- ============ 吉林师范 ============ -->
   <div class="dos" id="d-jlnu">
-    <div class="dos-h">
-      <h3 style="color:#a8384a">吉林师范大学</h3>
+    <div class="dos-h" style="background:rgba(158,59,71,.07)">
+      <h3 style="color:#9e3b47">吉林师范大学</h3>
       <span class="tag t-gray">10203</span>
       <span class="tag t-info">四平</span>
       <span class="meta">010 美术学院 ｜ 学制 3 年 ｜ 12000 元/年</span>
@@ -813,8 +824,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 
   <!-- ============ 长春师范 ============ -->
   <div class="dos" id="d-ccsf">
-    <div class="dos-h">
-      <h3 style="color:#1f6f7d">长春师范大学</h3>
+    <div class="dos-h" style="background:rgba(37,112,122,.07)">
+      <h3 style="color:#25707a">长春师范大学</h3>
       <span class="tag t-gray">10205</span>
       <span class="tag t-info">长春</span>
       <span class="meta">018 美术学院 ｜ 学制 3 年 ｜ 15000 元/年</span>
@@ -864,8 +875,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 
   <!-- ============ 天津师范 ============ -->
   <div class="dos" id="d-tjnu">
-    <div class="dos-h">
-      <h3 style="color:#1a5fa8">天津师范大学</h3>
+    <div class="dos-h" style="background:rgba(44,95,125,.07)">
+      <h3 style="color:#2c5f7d">天津师范大学</h3>
       <span class="tag t-gray">10065</span>
       <span class="tag t-info">天津</span>
       <span class="meta">018 美术与设计学院 ｜ 学制 3 年 ｜ 18000 元/年</span>
@@ -915,8 +926,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 
   <!-- ============ 河北师范 ============ -->
   <div class="dos" id="d-hebtu">
-    <div class="dos-h">
-      <h3 style="color:#a8541a">河北师范大学</h3>
+    <div class="dos-h" style="background:rgba(162,88,31,.08)">
+      <h3 style="color:#a2581f">河北师范大学</h3>
       <span class="tag t-gray">10094</span>
       <span class="tag t-info">石家庄</span>
       <span class="meta">011 美术与设计学院 ｜ 学制 3 年 ｜ 7000 元/年</span>
@@ -966,8 +977,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 
   <!-- ============ 河北大学 ============ -->
   <div class="dos" id="d-hbu">
-    <div class="dos-h">
-      <h3 style="color:#17734a">河北大学</h3>
+    <div class="dos-h" style="background:rgba(63,107,69,.07)">
+      <h3 style="color:#3f6b45">河北大学</h3>
       <span class="tag t-gray">10075</span>
       <span class="tag t-info">保定</span>
       <span class="meta">013 艺术学院 ｜ 学制 3 年 ｜ 7000 元/年</span>
@@ -1018,8 +1029,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 
   <!-- ============ 辽宁师范 ============ -->
   <div class="dos" id="d-lnnu">
-    <div class="dos-h">
-      <h3 style="color:#6b3d8f">辽宁师范大学</h3>
+    <div class="dos-h" style="background:rgba(106,74,134,.07)">
+      <h3 style="color:#6a4a86">辽宁师范大学</h3>
       <span class="tag t-gray">10165</span>
       <span class="tag t-info">大连</span>
       <span class="meta">美术学院 ｜ 学制 3 年 ｜ 学费章程未列明</span>
@@ -1069,8 +1080,8 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
 
   <!-- ============ 沈阳大学 ============ -->
   <div class="dos" id="d-syu">
-    <div class="dos-h">
-      <h3 style="color:#8a6d1f">沈阳大学</h3>
+    <div class="dos-h" style="background:rgba(138,106,32,.08)">
+      <h3 style="color:#8a6a20">沈阳大学</h3>
       <span class="tag t-gray">11035</span>
       <span class="tag t-info">沈阳</span>
       <span class="meta">007 美术学院 ｜ 学制 3 年 ｜ 12000 元/年</span>
@@ -1213,71 +1224,71 @@ table .sub{display:block;font-size:11.6px;color:var(--mute);font-weight:400;line
     <svg viewBox="0 0 700 400" role="img" aria-label="七校定位图：横轴上岸概率，纵轴城市与教师岗机会">
       <defs>
         <linearGradient id="qg" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#f2f6fa"/><stop offset="1" stop-color="#fbfcfd"/>
+          <stop offset="0" stop-color="#f9f4ea"/><stop offset="1" stop-color="#fdf9f1"/>
         </linearGradient>
       </defs>
-      <rect x="80" y="42" width="580" height="288" fill="url(#qg)" stroke="#e8ecf0"/>
+      <rect x="80" y="42" width="580" height="288" fill="url(#qg)" stroke="#eee7d8"/>
 
       <!-- mid lines -->
-      <line x1="370" y1="40" x2="370" y2="330" stroke="#dfe5eb" stroke-dasharray="4 4"/>
-      <line x1="80" y1="185" x2="660" y2="185" stroke="#dfe5eb" stroke-dasharray="4 4"/>
+      <line x1="370" y1="40" x2="370" y2="330" stroke="#e6ddcb" stroke-dasharray="4 4"/>
+      <line x1="80" y1="185" x2="660" y2="185" stroke="#e6ddcb" stroke-dasharray="4 4"/>
 
       <!-- quadrant labels -->
-      <text x="88" y="56" class="ax" fill="#9fb0c0">教师岗强 · 难考</text>
-      <text x="652" y="56" class="ax" fill="#9fb0c0" text-anchor="end">教师岗强 · 好考</text>
-      <text x="88" y="322" class="ax" fill="#9fb0c0">教师岗弱 · 难考</text>
-      <text x="652" y="322" class="ax" fill="#9fb0c0" text-anchor="end">教师岗弱 · 好考</text>
+      <text x="88" y="56" class="ax" fill="#b0a28f">教师岗强 · 难考</text>
+      <text x="652" y="56" class="ax" fill="#b0a28f" text-anchor="end">教师岗强 · 好考</text>
+      <text x="88" y="322" class="ax" fill="#b0a28f">教师岗弱 · 难考</text>
+      <text x="652" y="322" class="ax" fill="#b0a28f" text-anchor="end">教师岗弱 · 好考</text>
 
       <!-- axes -->
-      <text x="80" y="30" class="ax" fill="#5b6875" font-weight="600">↑ 城市与教师岗机会</text>
+      <text x="80" y="30" class="ax" fill="#5f5546" font-weight="600">↑ 城市与教师岗机会</text>
       <g class="ax">
         <text x="80" y="346">难考</text>
         <text x="660" y="346" text-anchor="end">好考</text>
       </g>
-      <text x="370" y="372" class="ax" text-anchor="middle" font-weight="700" fill="#5b6875">上岸概率 →（越右越容易）</text>
+      <text x="370" y="372" class="ax" text-anchor="middle" font-weight="700" fill="#5f5546">上岸概率 →（越右越容易）</text>
 
       <!-- points -->
       <!-- 天师 (370,72) -->
       <g>
-        <circle cx="370" cy="72" r="11" fill="#1a5fa8" opacity=".16"/>
-        <circle cx="370" cy="72" r="6" fill="#1a5fa8"/>
-        <text x="370" y="56" class="ax" text-anchor="middle" fill="#1a5fa8" font-weight="700">天津师范</text>
+        <circle cx="370" cy="72" r="11" fill="#2c5f7d" opacity=".16"/>
+        <circle cx="370" cy="72" r="6" fill="#2c5f7d"/>
+        <text x="370" y="56" class="ax" text-anchor="middle" fill="#2c5f7d" font-weight="700">天津师范</text>
       </g>
       <!-- 辽师 (152,104) -->
       <g>
-        <circle cx="152" cy="104" r="9" fill="#6b3d8f" opacity=".16"/>
-        <circle cx="152" cy="104" r="6" fill="#6b3d8f"/>
-        <text x="152" y="88" class="ax" text-anchor="middle" fill="#6b3d8f" font-weight="700">辽宁师范</text>
+        <circle cx="152" cy="104" r="9" fill="#6a4a86" opacity=".16"/>
+        <circle cx="152" cy="104" r="6" fill="#6a4a86"/>
+        <text x="152" y="88" class="ax" text-anchor="middle" fill="#6a4a86" font-weight="700">辽宁师范</text>
       </g>
       <!-- 河师 (298,169) -->
       <g>
-        <circle cx="298" cy="169" r="10" fill="#a8541a" opacity=".16"/>
-        <circle cx="298" cy="169" r="6" fill="#a8541a"/>
-        <text x="298" y="153" class="ax" text-anchor="middle" fill="#a8541a" font-weight="700">河北师范</text>
+        <circle cx="298" cy="169" r="10" fill="#a2581f" opacity=".16"/>
+        <circle cx="298" cy="169" r="6" fill="#a2581f"/>
+        <text x="298" y="153" class="ax" text-anchor="middle" fill="#a2581f" font-weight="700">河北师范</text>
       </g>
       <!-- 沈大 (587,201) -->
       <g>
-        <circle cx="587" cy="201" r="10" fill="#8a6d1f" opacity=".16"/>
-        <circle cx="587" cy="201" r="6" fill="#8a6d1f"/>
-        <text x="578" y="206" class="ax" text-anchor="end" fill="#8a6d1f" font-weight="700">沈阳大学</text>
+        <circle cx="587" cy="201" r="10" fill="#8a6a20" opacity=".16"/>
+        <circle cx="587" cy="201" r="6" fill="#8a6a20"/>
+        <text x="578" y="206" class="ax" text-anchor="end" fill="#8a6a20" font-weight="700">沈阳大学</text>
       </g>
       <!-- 长师 (515,220) -->
       <g>
-        <circle cx="515" cy="220" r="9" fill="#1f6f7d" opacity=".16"/>
-        <circle cx="515" cy="220" r="6" fill="#1f6f7d"/>
-        <text x="504" y="212" class="ax" text-anchor="end" fill="#1f6f7d" font-weight="700">长春师范</text>
+        <circle cx="515" cy="220" r="9" fill="#25707a" opacity=".16"/>
+        <circle cx="515" cy="220" r="6" fill="#25707a"/>
+        <text x="504" y="212" class="ax" text-anchor="end" fill="#25707a" font-weight="700">长春师范</text>
       </g>
       <!-- 河大 (544,233) -->
       <g>
-        <circle cx="544" cy="233" r="9" fill="#17734a" opacity=".16"/>
-        <circle cx="544" cy="233" r="6" fill="#17734a"/>
-        <text x="551" y="250" class="ax" fill="#17734a" font-weight="700">河北大学</text>
+        <circle cx="544" cy="233" r="9" fill="#3f6b45" opacity=".16"/>
+        <circle cx="544" cy="233" r="6" fill="#3f6b45"/>
+        <text x="551" y="250" class="ax" fill="#3f6b45" font-weight="700">河北大学</text>
       </g>
       <!-- 吉师 (486,298) -->
       <g>
-        <circle cx="486" cy="298" r="9" fill="#a8384a" opacity=".16"/>
-        <circle cx="486" cy="298" r="6" fill="#a8384a"/>
-        <text x="495" y="303" class="ax" fill="#a8384a" font-weight="700">吉林师范</text>
+        <circle cx="486" cy="298" r="9" fill="#9e3b47" opacity=".16"/>
+        <circle cx="486" cy="298" r="6" fill="#9e3b47"/>
+        <text x="495" y="303" class="ax" fill="#9e3b47" font-weight="700">吉林师范</text>
       </g>
     </svg>
   </div>
